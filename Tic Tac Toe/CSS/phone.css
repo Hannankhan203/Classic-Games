@@ -1,0 +1,109 @@
+/* Buttons deigning */
+
+/* Mode button */
+.mode {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    top: 85%;
+    right: 2%;
+}
+
+/* Back button */
+.back {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+}
+
+/* Change game button */
+.change-game {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+}
+
+/* Reset button */
+.reset-btn {
+    margin-top: 4.9rem;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+}
+
+/* New button */
+.new-btn {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    
+}
+
+/* Main game */
+.container {
+    height: 60vh;
+    flex-direction: column;
+    /* justify-content: start; */
+    /* border: 2px solid black; */
+}
+
+.game {
+    height: 50vmin;
+    width: 50vmin;
+    /* border: 2px solid black; */
+    position: fixed;
+    top: 10%;
+    margin-top: 5rem;
+}
+
+.box {
+    height: 15vmin;
+    width: 15vmin;
+    font-size: 10vmin;
+    border-radius: 0.7rem;
+}
+
+/* Players */
+.player-one, .player-two {
+    margin-top: 5rem;
+    font-size: 1.5rem;
+}
+
+.player-one {
+    position: fixed;
+    top: 35%;
+    left: 10%;
+}
+
+.player-two {
+    position: fixed;
+    top: 35%;
+    right: 10%;
+}
+
+/* Winner message */
+.msg {
+    font-size: 5vmin;
+}
+
+/* Draw message */
+.msg-container-draw {
+    height: 40vmin;
+    gap: 4rem;
+    /* border: 2px solid black; */
+    margin-top: 8rem;
+}
+
+.draw-msg {
+    font-size: 5vmin;
+}
+
+/* Classes applied through JavaScript */
+
+/* Dark mode Reset button */
+.reset-btn-2 {
+    position: fixed;
+    top: 58%;
+    right: 33%;
+}

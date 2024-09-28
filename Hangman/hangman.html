@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 640px)" href="CSS/phone.css">
+</head>
+<body>
+    <h1 id="hangman-title">Hangman</h1>
+    <div id="category-selection" class="category-selection">
+        <button class="category-btn cat-btn" onclick="startGame('fruits')">Fruits</button>
+        <button class="category-btn cat-btn" onclick="startGame('animals')">Animals</button>
+        <button class="category-btn cat-btn" onclick="startGame('countries')">Countries</button>
+    </div>
+    
+    <div id="game-container" class="hidden game-container">
+        <div id="guessed-container" class="guessed-container">
+        </div>
+        <div id="consequence-box" class="consequence-box">Attempts left: <span id="attempts-left" class="attempts-left"></span></div>
+        <div id="keyboard" class="keyboard phone-keyboard"></div>
+    </div>
+
+    <div id="end-message" class="hidden end-message"></div>
+    <button class="reset-btn">Reset Game</button>
+    <button class="mode">Activate Dark Mode!</button>
+    <button class="back"><a class="back-link" href="../index.html">Back</a></button>
+    <script src="JS/script.js"></script>
+</body>
+</html>

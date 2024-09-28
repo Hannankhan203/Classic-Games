@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width:740px)" href="CSS/phone.css">
+    <link rel="stylesheet" media="screen and (max-width:650px)" href="CSS/phone2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <!-- Toggle Mode button -->
+    <button class="mode" id="mode">Activate Dark Mode!</button>
+    <!-- Message that will show the winner -->
+    <div class="msg-container hide">
+        <p id="msg" class="msg">
+            Winner!
+        </p>
+        <!-- New game button -->
+        <button id="new-btn" class="new-btn">New Game!</button>
+    </div>
+    <!-- main game code -->
+    <main>
+        <h1>Tic Tac Toe</h1>
+        <div class="container">
+            <p class="player-one turn">Player 1 (O)</p>
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+            <p class="player-two turn">Player 2 (X)</p>
+        </div>
+        <!-- draw game scenario -->
+        <div class="msg-container-draw hide">
+        <p id="draw-msg" class="draw-msg">Game draw!</p>
+        </div>
+        <!-- Reset game button -->
+        <button id="reset-btn" class="reset-btn reset-btn-2">Reset Game!</button>
+    </main>
+    <!-- Change game button -->
+    <div class="change-game-container change-game-2">
+    <button class="change-game"><a class="change-link" href="../index.html">Change Game</a></button>
+    </div>
+    <!-- back button -->
+    <button class="back"><a class="back-link" href="../index.html">Back</a></button>
+    <script src="JS/script.js"></script>
+</body>
+</html>

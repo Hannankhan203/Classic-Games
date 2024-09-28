@@ -1,0 +1,77 @@
+/* Buttons designing */
+
+/* Mode button */
+.mode {
+    padding: 0.5rem;
+    font-size: 0.5rem;
+    right: 4%;
+}
+
+/* Back button */
+.back {
+    padding: 0.5rem;
+    font-size: 0.5rem;
+}
+
+/* Heading */
+h1 {
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+}
+
+/* Main game */
+.choices {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 3rem;
+    top: 3%;
+    z-index: 1;
+    /* border: 2px solid black; */
+}
+
+.choice {
+    height: 50px;
+    width: 50px;
+    /* border: 2px solid black; */
+}
+
+.layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.symbol {
+    font-size: 1.3rem;
+}
+
+img {
+    height: 40px;
+    width: 40px;
+}
+
+/* Score board */
+.score-board {
+    font-size: 1.3rem;
+    margin-top: 0;
+    gap: 9rem;
+    top: 30%;
+    /* border: 2px solid black; */
+}
+
+#user-score, #comp-score {
+    font-size: 3rem;
+}
+
+/* Message container */
+.msg-container {
+    margin-top: 4rem;
+    /* border: 2px solid black; */
+}
+
+#msg {
+    font-size: 1rem;
+    padding: 0.7rem;
+}

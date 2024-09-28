@@ -1,0 +1,32 @@
+/* Buttons designing */
+
+/* Mode button */
+.mode {
+    top: 90%;
+    right: 8%;
+    padding: 0.5rem;
+    font-size: 0.5rem;
+}
+
+/* Options */
+.options {
+    /* border: 2px solid black; */
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    top: 20%;
+}
+
+/* Game button */
+.game {
+    padding: 0.5rem;
+    font-size: 0.5rem;
+}
+
+/* Heading */
+h1 {
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+}
+

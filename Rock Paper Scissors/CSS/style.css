@@ -1,0 +1,193 @@
+/* Universal selector to set everything to 0 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Body */
+body {
+    background-color: #afd5aa;
+}
+
+/* Buttons designing */
+
+/* Mode button */
+.mode {
+    background-color: #5c5346;
+    color: #ffffff;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    position: fixed;
+    top: 85%;
+    right: 2%;
+    box-shadow: 0 0 1rem rgb(0, 0, 0);
+}
+
+.mode:active {
+    background-color: #7d7c84;
+}
+
+.mode:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Back button */
+.back {
+    background-color: #5c5346;
+    color: #ffffff;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    position: fixed;
+    top: 85%;
+    left: 4%;
+    box-shadow: 0 0 1rem rgb(0, 0, 0);
+}
+
+.back:active {
+    background-color: #7d7c84;
+}
+
+.back:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Heading */
+h1 {
+    background-color: #5c5346;
+    color: #ffffff;
+    height: 5rem;
+    line-height: 5rem;
+    width: 100vw;
+    position: fixed;
+    text-shadow: 0 0 1rem rgb(0, 0, 0);
+    box-shadow: 0 0 1rem rgb(0, 0, 0);
+}
+
+/* Main game */
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+    /* border: 2px solid black; */
+    width: 100vw;
+    position: fixed;
+    top: 5%;
+}
+
+.choice {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1rem rgb(0, 0, 0);
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: #26547c;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.symbol {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#rock-symbol {
+    color: rgb(219, 117, 134);
+}
+
+#paper-symbol {
+    color: rgb(187, 83, 187);
+}
+
+#scissors-symbol {
+    color: rgb(96, 107, 225);
+}
+
+img {
+    height: 95px;
+    width: 95px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Score board */
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top:3rem;
+    gap: 5rem;
+    position: fixed;
+    top: 35%;
+    width: 100vw;
+    /* border: 2px solid black; */
+    color: #8c6057;
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+#user-score, #comp-score {
+    font-size: 4rem;
+}
+
+/* Message container */
+.msg-container {
+    margin-top: 5rem;
+    /* border: 2px solid black; */
+    position: absolute;
+    top: 55%;
+    width: 100vw
+}
+
+.msg {
+    background-color: #5c5346;
+    color: #ffffff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    box-shadow: 0 0 1rem rgb(0, 0, 0);
+    text-shadow: 0 0 1rem rgb(0, 0, 0);
+}
+
+/* Classes applied using JavaScript */
+
+/* Dark mode body */
+.body-dark {
+    background-color: #000000;
+}
+
+/* Dark mode background */
+.darkBg {
+    background-color: #91a6ff;
+}
+
+/* Dark mode score board */
+.darkScore {
+    color: #faff7f;
+}
