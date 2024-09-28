@@ -173,7 +173,7 @@ function endGame(won) {
     endMsg.classList.remove("hidden");
     
     if (won) {
-        endMsg.textContent = `Congratulations! You guessed the word "${chosenWord}"!`;
+        endMsg.textContent = `Congratulations! Your guess was right! The word was "${chosenWord}"! Play again.`;
     } else {
         endMsg.textContent = `You guessed the wrong word! The correct word was "${chosenWord}". Try again.`;
     }
