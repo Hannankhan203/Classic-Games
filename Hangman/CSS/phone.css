@@ -55,17 +55,17 @@ h1 {
 .phone-keyboard {
     /* display: none; */
     /* border: 2px solid black; */
-    width: 75vw;
+    width: 90vw;
     margin-top: 0.8rem;
-    height: 15vh;
+    height: 25vh;
     position: fixed;
     top: 20%;
-    left: 12%;
+    left: 5%;
 }
 
 .key {
-    padding: 0.4rem;
-    font-size: 0.4rem;
+    padding: 0.5rem;
+    font-size: 0.5rem;
     /* border: 2px solid black; */
 }
 
@@ -75,9 +75,9 @@ h1 {
     /* display: none; */
     padding: 0.5rem;
     font-size: 1rem;
-    top: 43%;
+    top: 50%;
     left: 27%;
-    right: 30%;
+    right: 27%;
 }
 
 /* Consequence box */
@@ -87,13 +87,15 @@ h1 {
     height: 20vh;
     width: 75vw;
     right: 13%;
-    top: 50%;
+    top: 55%;
     margin-top: 1.5rem;
     font-size: 2rem;
 }
 
 .end-message {
      /* border: 2px solid black; */
-     height: 40vh;
-     font-size: 1rem;
+     height: 10vh;
+     font-size: 0.5rem;
+     line-height: 5vh;
+     top: 35%;
 }
