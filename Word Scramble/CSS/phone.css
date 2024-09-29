@@ -1,0 +1,42 @@
+.mode {
+    top: 90%;
+    right: 6%;
+    padding: 0.5rem;
+    font-size: 0.5rem;
+}
+
+.back {
+    top: 90%;
+    left: 6%;
+    padding: 0.5rem;
+    font-size: 0.5rem;
+}
+
+h1 {
+    /* border: 2px solid black; */
+    font-size: 1.5rem;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.container {
+    /* border: 2px solid black; */
+    width: 90%;
+    height: 65%;
+    left: 5%;
+    top: 15%;
+}
+
+.submit-btn {
+    padding: 0.5rem;
+    font-size: 0.5rem;
+}
+
+.new-game {
+    padding: 0.5rem;
+    font-size: 0.5rem;
+}
+
+.scrambled-word, .result {
+    font-size: 1rem;
+}
