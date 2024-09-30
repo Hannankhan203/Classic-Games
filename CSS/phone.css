@@ -13,8 +13,10 @@
     /* border: 2px solid black; */
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    top: 20%;
+    gap: 2rem;
+    top: 30%;
+    width: 80vw;
+    left: 10%;
 }
 
 /* Game button */
