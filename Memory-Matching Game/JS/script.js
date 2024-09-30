@@ -94,8 +94,8 @@ function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
 
-  if (moves === 0) startTimer();
-
+  if (moves === 0 && !startTime) startTimer();
+  
   this.classList.add('is-flipped');
 
   if (!hasFlippedCard) {
@@ -110,6 +110,7 @@ function flipCard() {
 
   checkForMatch();
 }
+
 
 function checkForMatch() {
   const isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
@@ -155,7 +156,9 @@ function restartGame() {
   moves = 0;
   moveCounter.textContent = moves;
   timeDisplay.textContent = '0:00';
+  
   clearInterval(timerInterval);
+  startTime = null;
   
   cards.forEach(card => {
     card.classList.remove('is-flipped');
@@ -166,6 +169,7 @@ function restartGame() {
 
   winningMessage.classList.add('hidden');
 }
+
 
 (function shuffle() {
   cards.forEach(card => {
