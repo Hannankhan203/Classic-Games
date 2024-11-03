@@ -11,9 +11,7 @@ let mode = "Light mode";
 
 // Dark mode function
 const darkMode = () => {
-  // modeBtn.innerText = "Activate Light Mode!";
   body.classList.add("body-dark-mode");
-//   modeBtn2.classList.add("dark-mode-bg");
   games.forEach((game) => {
       game.classList.add("dark-mode-bg");
     });
@@ -23,10 +21,8 @@ const darkMode = () => {
 
 // Light mode function
 const lightMode = () => {
-  // modeBtn.innerText = "Activate Dark Mode!";
   body.classList.remove("body-dark-mode");
   h1.classList.remove("dark-mode-bg");
-  //   modeBtn.classList.remove("dark-mode-bg");
   games.forEach((game) => {
       game.classList.remove("dark-mode-bg");
     });

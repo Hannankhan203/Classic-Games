@@ -16,8 +16,8 @@ body {
 
 /* Back button */
 .back {
-    padding: 1rem;
-    font-size: 1.25rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
     border-radius: 2rem;
     border: none;
     position: fixed;
@@ -45,29 +45,58 @@ a {
 }
 
 /* Mode button */
-.mode {
-    padding: 1rem;
-    font-size: 1rem;
-    border-radius: 2rem;
-    border: none;
+.mode1 {
     position: fixed;
-    top: 85%;
-    right: 4%;
+    top: 4%;
+    right: 2%;
+    padding: 0.4rem;
+    border: none;
+    border-radius: 2rem;
     background-color: #6d9dc5;
-    color: #aeecef;
-    font-weight: 700;
     box-shadow: 0 0 1rem rgb(0,0,0);
-    text-shadow: 0 0 1rem rgb(0,0,0);
-    /* border: 2px solid black; */
+    display: flex;
 }
 
-.mode:active {
+.mode1 img {
+    width: 25px;
+}
+
+.mode1:active {
     background-color: #181f1c;
 }
 
-.mode:hover {
-    transform: scale(1.1);
+.mode1:hover {
+    transform: scale(1.02);
     transition: transform 0.5s ease-in-out
+}
+
+.mode2 {
+    position: fixed;
+    top: 4%;
+    right: 2%;
+    padding: 0.4rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgb(0,0,0);
+    background-color: #4C4C9D;
+    display: flex;
+}
+
+.mode2 img {
+    width: 25px;
+}
+
+.mode2:active {
+    background-color: #181f1c;
+}
+
+.mode2:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s ease-in-out
+}
+
+.toggle {
+    display: none;
 }
 
 /* Change game button */
@@ -102,8 +131,8 @@ a {
 
 /* Reset Button */
 .reset-btn {
-    padding: 1rem;
-    font-size: 1.25rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
     background-color: #6d9dc5;
     color: #aeecef;
     font-weight: 700;
@@ -112,6 +141,8 @@ a {
     box-shadow: 0 0 1rem rgb(0,0,0);
     text-shadow: 0 0 1rem rgb(0,0,0);
     z-index: 1;
+    position: relative;
+    bottom: 5rem;
     /* border: 2px solid black; */
 }
 
@@ -149,10 +180,12 @@ a {
 /* Heading */
 h1 {
     color: #aeecef;
-    font-size: 6rem;
+    font-size: 4rem;
     margin-top: 10wpx;
     text-shadow: 0 0 1rem rgb(0,0,0);
     /* border: 2px solid black; */
+    height: 8rem;
+    line-height: 8rem;
 }
 
 /* Main game */
@@ -165,24 +198,25 @@ h1 {
 }
 
 .game {
-    height: 60vmin;
-    width: 60vmin;
+    height: 40vmin;
+    width: 40vmin;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5vmin;
-    position: fixed;
+    position: relative;
+    bottom: 10%;
     /* border: 2px solid black; */
 }
 
 .box{
-    height: 18vmin;
-    width: 18vmin;
+    height: 10vmin;
+    width: 10vmin;
     border-radius: 1rem;
     border: none;
     box-shadow: 0 0 1rem rgb(0,0,0);
-    font-size: 10vmin;
+    font-size: 5vmin;
     color: #53599a;
     background-color: #aeecef;
     /* border: 2px solid black; */
@@ -222,18 +256,20 @@ h1 {
 
 /* Players */
 .player-one, .player-two {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 700;
     /* border: 2px solid black; */
 }
 
 .player-one {
-    position: fixed;
-    left: 5%;
+    position: relative;
+    left: 10%;
+    bottom: 10%;
 }
 .player-two {
-    position: fixed;
-    right: 5%;
+    position: relative;
+    right: 10%;
+    bottom: 10%;
 }
 
 .turn {
@@ -258,6 +294,8 @@ h1 {
     position: fixed;
     top: 75%;
     right: 35%;
+    padding: 1rem;
+    font-size: 1.25rem;
 }
 
 /* Dark mode body */

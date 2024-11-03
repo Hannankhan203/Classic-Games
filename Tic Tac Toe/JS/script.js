@@ -11,7 +11,8 @@ let msgContDraw = document.querySelector(".msg-container-draw");
 let playerOne = document.querySelector(".player-one");
 let playerTwo = document.querySelector(".player-two");
 let body = document.querySelector("body");
-let modeBtn = document.querySelector("#mode");
+let modeBtn1 = document.querySelector("#mode1");
+let modeBtn2 = document.querySelector("#mode2");
 let back = document.querySelector(".back");
 let backLink = document.querySelector(".back-link");
 let gameChange = document.querySelector(".change-game-container");
@@ -53,7 +54,7 @@ const updatePlayerClasses = () => {
 }
 
 const darkMode = () => {
-    modeBtn.innerText = "Activate Light Mode!";
+    // modeBtn.innerText = "Activate Light Mode!";
     boxes.forEach((box) => {
         box.classList.add("darkBox");
     });
@@ -65,7 +66,8 @@ const darkMode = () => {
     playerOne.classList.add("darkLayout");
     playerTwo.classList.add("darkLayout");
     body.classList.add("body-dark");
-    modeBtn.classList.add("darkLayout", "darkLayout2");
+    modeBtn1.classList.add("toggle");
+    modeBtn2.classList.remove("toggle");
     back.classList.add("darkLayout2");
     backLink.classList.add("darkLayout");
     change.classList.add("darkLayout2");
@@ -74,7 +76,7 @@ const darkMode = () => {
 }
 
 const lightMode = () => {
-    modeBtn.innerText = "Activate Mode Mode!";
+    // modeBtn.innerText = "Activate Mode Mode!";
     boxes.forEach((box) => {
         box.classList.remove("darkBox");
     });
@@ -86,7 +88,8 @@ const lightMode = () => {
     playerOne.classList.remove("darkLayout");
     playerTwo.classList.remove("darkLayout");
     body.classList.remove("body-dark");
-    modeBtn.classList.remove("darkLayout", "darkLayout2");
+    modeBtn2.classList.add("toggle");
+    modeBtn1.classList.remove("toggle");
     back.classList.remove("darkLayout2");
     backLink.classList.remove("darkLayout");
     change.classList.remove("darkLayout2");
@@ -109,7 +112,8 @@ const toggleMode = () => {
 }
 
 
-modeBtn.addEventListener("click", toggleMode);
+modeBtn1.addEventListener("click", toggleMode);
+modeBtn2.addEventListener("click", toggleMode);
 
 
 // Setting who will play first
