@@ -6,8 +6,9 @@ let compScore = 0;
 let body = document.querySelector("body");
 const choices = document.querySelectorAll(".choice");
 const msg = document.querySelector("#msg");
-const modeBtn = document.querySelector("#mode");
 const h1 = document.querySelector("h1");
+let modeBtn1 = document.querySelector("#mode1");
+let modeBtn2 = document.querySelector("#mode2");
 const userScorePara = document.querySelector("#user-score");
 const compScorePara = document.querySelector("#comp-score");
 const scoreBoard = document.querySelector("score-board");
@@ -19,11 +20,11 @@ let mode = "Light mode";
 
 // Dark mode function
 const darkMode = () => {
-    modeBtn.innerText = "Activate Light Mode!";
     body.classList.add("body-dark");
     msg.classList.add("darkBg");
-    modeBtn.classList.add("darkBg");
     h1.classList.add("darkBg");
+    modeBtn1.classList.add("toggle");
+    modeBtn2.classList.remove("toggle");
     divs.forEach((div) => {
         div.classList.add("darkScore");
     });
@@ -32,13 +33,13 @@ const darkMode = () => {
 
 // Light mode function
 const lightMode = () => {
-    modeBtn.innerText = "Activate Dark Mode!";
     body.classList.remove("body-dark");
     msg.classList.remove("darkBg");
-    modeBtn.classList.remove("darkBg");
     h1.classList.remove("darkBg");
+    modeBtn1.classList.remove("toggle");
+    modeBtn2.classList.add("toggle");
     divs.forEach((div) => {
-        div.classList.add("darkScore");
+        div.classList.remove("darkScore");
     });
     back.classList.remove("darkBg");
 }
@@ -55,7 +56,8 @@ const toggleMode = () => {
         
 }
 
-modeBtn.addEventListener("click", toggleMode);
+modeBtn1.addEventListener("click", toggleMode);
+modeBtn2.addEventListener("click", toggleMode);
 
 // generating computer's random choice
 let genCompChoice = () => {

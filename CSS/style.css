@@ -23,6 +23,7 @@ body {
     background-color: #60712f;
     box-shadow: 0 0 1rem rgb(0,0,0);
     display: flex;
+    cursor: pointer;
 }
 
 .mode1 img {
@@ -48,6 +49,7 @@ body {
     background-color: #60712f;
     box-shadow: 0 0 1rem rgb(0,0,0);
     display: flex;
+    cursor: pointer;
 }
 
 .mode2 img {

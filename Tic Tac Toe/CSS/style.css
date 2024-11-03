@@ -20,9 +20,9 @@ body {
     font-size: 0.8rem;
     border-radius: 2rem;
     border: none;
-    position: fixed;
-    top: 85%;
-    left: 4%;
+    position: relative;
+    bottom: 5rem;
+    right: 35rem;
     background-color: #6d9dc5;
     font-weight: 700;
     box-shadow: 0 0 1rem rgb(0,0,0);
@@ -55,6 +55,7 @@ a {
     background-color: #6d9dc5;
     box-shadow: 0 0 1rem rgb(0,0,0);
     display: flex;
+    cursor: pointer;
 }
 
 .mode1 img {
@@ -80,6 +81,7 @@ a {
     box-shadow: 0 0 1rem rgb(0,0,0);
     background-color: #4C4C9D;
     display: flex;
+    cursor: pointer;
 }
 
 .mode2 img {
@@ -181,11 +183,11 @@ a {
 h1 {
     color: #aeecef;
     font-size: 4rem;
-    margin-top: 10wpx;
+    margin-top: 4rem;
     text-shadow: 0 0 1rem rgb(0,0,0);
     /* border: 2px solid black; */
-    height: 8rem;
-    line-height: 8rem;
+    height: 4rem;
+    line-height: 4rem;
 }
 
 /* Main game */

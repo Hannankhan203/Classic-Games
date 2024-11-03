@@ -14,39 +14,75 @@ body {
 /* Buttons designing */
 
 /* Mode button */
-.mode {
-    background-color: #5c5346;
-    color: #ffffff;
-    padding: 1rem;
-    font-size: 1rem;
+.mode1 {
+    position: fixed;
+    top: 4%;
+    right: 2%;
+    padding: 0.4rem;
     border: none;
     border-radius: 2rem;
+    box-shadow: 0 0 1rem rgb(0,0,0);
+    background-color: #5c5346;
+    display: flex;
+    cursor: pointer;
+}
+
+.mode1 img {
+    width: 25px;
+    height: 25px;
+}
+
+.mode1:active {
+    background-color: #181f1c;
+}
+
+.mode1:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s ease-in-out
+}
+
+.mode2 {
     position: fixed;
-    top: 85%;
+    top: 4%;
     right: 2%;
-    box-shadow: 0 0 1rem rgb(0, 0, 0);
+    padding: 0.4rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgb(0,0,0);
+    display: flex;
+    background-color: #91a6ff;
+    cursor: pointer;
 }
 
-.mode:active {
-    background-color: #7d7c84;
+.mode2 img {
+    width: 25px;
+    height: 25px;
 }
 
-.mode:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s ease-in-out;
+.mode2:active {
+    background-color: #181f1c;
+}
+
+.mode2:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s ease-in-out
+}
+
+.toggle {
+    display: none;
 }
 
 /* Back button */
 .back {
     background-color: #5c5346;
     color: #ffffff;
-    padding: 1rem;
-    font-size: 1rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
     border: none;
     border-radius: 2rem;
-    position: fixed;
-    top: 85%;
-    left: 4%;
+    position: relative;
+    top: 6rem;
+    right: 35rem;
     box-shadow: 0 0 1rem rgb(0, 0, 0);
 }
 
@@ -66,14 +102,15 @@ a {
 
 /* Heading */
 h1 {
-    background-color: #5c5346;
+    /* background-color: #5c5346; */
     color: #ffffff;
-    height: 5rem;
-    line-height: 5rem;
+    height: 4rem;
+    line-height: 4rem;
     width: 100vw;
-    position: fixed;
+    margin-top: 4rem;
+    /* border: 2px solid black; */
+    font-size: 4rem;
     text-shadow: 0 0 1rem rgb(0, 0, 0);
-    box-shadow: 0 0 1rem rgb(0, 0, 0);
 }
 
 /* Main game */
@@ -82,16 +119,15 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-top: 5rem;
     /* border: 2px solid black; */
     width: 100vw;
-    position: fixed;
-    top: 5%;
+    position: relative;
+    top: 6rem;
 }
 
 .choice {
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -111,7 +147,7 @@ h1 {
 }
 
 .symbol {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -128,8 +164,8 @@ h1 {
 }
 
 img {
-    height: 95px;
-    width: 95px;
+    height: 55px;
+    width: 55px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -142,31 +178,33 @@ img {
     font-size: 2rem;
     margin-top:3rem;
     gap: 5rem;
-    position: fixed;
-    top: 35%;
+    position: relative;
+    top: 4rem;
     width: 100vw;
     /* border: 2px solid black; */
     color: #8c6057;
     text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 #user-score, #comp-score {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 /* Message container */
 .msg-container {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     /* border: 2px solid black; */
-    position: absolute;
-    top: 55%;
-    width: 100vw
+    position: relative;
+    top: 6rem;
+    width: 100vw;
+    z-index: -1;
 }
 
 .msg {
     background-color: #5c5346;
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: inline;
     padding: 1rem;
     border-radius: 2rem;
