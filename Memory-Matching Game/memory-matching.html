@@ -1,96 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Memory Matching</title>
-  <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" media="screen and (max-width:640px)" href="CSS/phone.css">
-</head>
-<body>
-  <h1>Memory Matching</h1>
-  
-  <div class="main-container">
-    <div class="game-info">
-      <p>Moves: <span id="move-counter">0</span></p>
-      <p>Time: <span id="timer">0:00</span></p>
-    </div>
-    
-    <div class="game-container">
-      <div class="card" data-framework="1">
-        <div class="front"></div>
-        <div class="back">1</div>
-      </div>
-      <div class="card" data-framework="2">
-        <div class="front"></div>
-        <div class="back">2</div>
-      </div>
-      <div class="card" data-framework="3">
-        <div class="front"></div>
-        <div class="back">3</div>
-      </div>
-      <div class="card" data-framework="4">
-        <div class="front"></div>
-        <div class="back">4</div>
-      </div>
-      <div class="card" data-framework="5">
-        <div class="front"></div>
-        <div class="back">5</div>
-      </div>
-      <div class="card" data-framework="6">
-        <div class="front"></div>
-        <div class="back">6</div>
-      </div>
-      <div class="card" data-framework="7">
-        <div class="front"></div>
-        <div class="back">7</div>
-      </div>
-      <div class="card" data-framework="8">
-        <div class="front"></div>
-        <div class="back">8</div>
-      </div>
-      <div class="card" data-framework="1">
-        <div class="front"></div>
-        <div class="back">1</div>
-      </div>
-      <div class="card" data-framework="2">
-        <div class="front"></div>
-        <div class="back">2</div>
-      </div>
-      <div class="card" data-framework="3">
-        <div class="front"></div>
-        <div class="back">3</div>
-      </div>
-      <div class="card" data-framework="4">
-        <div class="front"></div>
-        <div class="back">4</div>
-      </div>
-      <div class="card" data-framework="5">
-        <div class="front"></div>
-        <div class="back">5</div>
-      </div>
-      <div class="card" data-framework="6">
-        <div class="front"></div>
-        <div class="back">6</div>
-      </div>
-      <div class="card" data-framework="7">
-        <div class="front"></div>
-        <div class="back">7</div>
-      </div>
-      <div class="card" data-framework="8">
-        <div class="front"></div>
-        <div class="back">8</div>
-      </div>
-    </div>
-    
-    <div id="winning-message" class="hidden winning-message">
-      <p>Congratulations! You've won!</p>
-      <button id="restart-button" class="restart-button">Play Again</button>
-    </div>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Matching</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:640px)"
+      href="CSS/phone.css"
+    />
+  </head>
+  <body>
+    <h1>Memory Matching</h1>
 
-  <button class="mode" id="mode">Activate Dark Mode!</button>
-  <button class="go-back"><a class="back-link" href="../index.html">Back</a></button>
-  <script src="JS/script.js"></script>
-</body>
+    <div class="main-container">
+      <div class="game-info">
+        <p>Moves: <span id="move-counter">0</span></p>
+        <p>Time: <span id="timer">0:00</span></p>
+      </div>
+
+      <div class="game-container">
+        <div class="card" data-framework="1">
+          <div class="front"></div>
+          <div class="back">1</div>
+        </div>
+        <div class="card" data-framework="2">
+          <div class="front"></div>
+          <div class="back">2</div>
+        </div>
+        <div class="card" data-framework="3">
+          <div class="front"></div>
+          <div class="back">3</div>
+        </div>
+        <div class="card" data-framework="4">
+          <div class="front"></div>
+          <div class="back">4</div>
+        </div>
+        <div class="card" data-framework="5">
+          <div class="front"></div>
+          <div class="back">5</div>
+        </div>
+        <div class="card" data-framework="6">
+          <div class="front"></div>
+          <div class="back">6</div>
+        </div>
+        <div class="card" data-framework="7">
+          <div class="front"></div>
+          <div class="back">7</div>
+        </div>
+        <div class="card" data-framework="8">
+          <div class="front"></div>
+          <div class="back">8</div>
+        </div>
+        <div class="card" data-framework="1">
+          <div class="front"></div>
+          <div class="back">1</div>
+        </div>
+        <div class="card" data-framework="2">
+          <div class="front"></div>
+          <div class="back">2</div>
+        </div>
+        <div class="card" data-framework="3">
+          <div class="front"></div>
+          <div class="back">3</div>
+        </div>
+        <div class="card" data-framework="4">
+          <div class="front"></div>
+          <div class="back">4</div>
+        </div>
+        <div class="card" data-framework="5">
+          <div class="front"></div>
+          <div class="back">5</div>
+        </div>
+        <div class="card" data-framework="6">
+          <div class="front"></div>
+          <div class="back">6</div>
+        </div>
+        <div class="card" data-framework="7">
+          <div class="front"></div>
+          <div class="back">7</div>
+        </div>
+        <div class="card" data-framework="8">
+          <div class="front"></div>
+          <div class="back">8</div>
+        </div>
+      </div>
+
+      <div id="winning-message" class="hidden winning-message">
+        <p>Congratulations! You've won!</p>
+        <button id="restart-button" class="restart-button">Play Again</button>
+      </div>
+    </div>
+
+    <button class="mode2" id="mode2" title="Light Mode">
+      <img src="../Images/Light Mode Icon.png" alt="Light Mode Icon" />
+    </button>
+    <button class="mode1" id="mode1" title="Dark Mode">
+      <img src="../Images/Dark Mode Icon.png" alt="Dark Mode Icon" />
+    </button>
+    <button class="go-back">
+      <a class="back-link" href="../index.html">Back</a>
+    </button>
+    <script src="JS/script.js"></script>
+  </body>
 </html>

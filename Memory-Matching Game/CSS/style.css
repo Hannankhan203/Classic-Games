@@ -10,13 +10,12 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 3rem;
-    background-color: #A88FAC;
+    font-size: 4rem;
     color: #EFCEFA;
-    height: 6rem;
-    line-height: 6rem;
+    height: 4rem;
+    line-height: 4rem;
+    margin-top: 4rem;
     text-shadow: 0 0 1rem rgb(0,0,0);
-    box-shadow: 0 0 1rem rgb(0,0,0);
 }
 
 .main-container {
@@ -31,7 +30,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     width: 400px;
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 1.5rem;;
     gap: 10rem;
     color: #EFCEFA;
@@ -39,16 +38,19 @@ h1 {
 }
 
 .game-container {
-    margin-top: 1rem;
+    margin-top: 3rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    width: 60%;
+    /* border: 2px solid black; */
 }
 
+
 .card {
-    width: 130px;
-    height: 130px;
+    width: 80px;
+    height: 80px;
     perspective: 1000px;
     
 }
@@ -132,38 +134,73 @@ h1 {
     transition: transform 0.3s ease-in-out;
 }
 
-.mode {
+/* Mode button */
+.mode1 {
     position: fixed;
-    top: 85%;
-    right: 4%;
-    padding: 1rem;
-    font-size: 1rem;
+    top: 4%;
+    right: 2%;
+    padding: 0.4rem;
     border: none;
     border-radius: 2rem;
-    background-color: #D4B2D8;
-    color: #EFCEFA;
-    font-weight: 600;
-    text-shadow: 0 0 1rem rgb(0,0,0);
     box-shadow: 0 0 1rem rgb(0,0,0);
+    background-color: #5c5346;
+    display: flex;
+    cursor: pointer;
 }
 
-.mode:active {
-    background-color: #EFCEFA;
+.mode1 img {
+    width: 25px;
+    height: 25px;
 }
 
-.mode:hover {
-    transform: scale(1.2);
+.mode1:active {
+    background-color: #181f1c;
+}
+
+.mode1:hover {
+    transform: scale(1.02);
     transition: transform 0.5s ease-in-out
 }
 
+.mode2 {
+    position: fixed;
+    top: 4%;
+    right: 2%;
+    padding: 0.4rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgb(0,0,0);
+    display: flex;
+    background-color: #91a6ff;
+    cursor: pointer;
+}
+
+.mode2 img {
+    width: 25px;
+    height: 25px;
+}
+
+.mode2:active {
+    background-color: #181f1c;
+}
+
+.mode2:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s ease-in-out
+}
+
+.toggle {
+    display: none;
+}
+
 .go-back {
-    padding: 1rem;
-    font-size: 1.25rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
     border-radius: 2rem;
     border: none;
-    position: fixed;
-    top: 85%;
-    left: 4%;
+    position: relative;
+    top: 4rem;
+    left: 4rem;
     background-color: #D4B2D8;
     font-weight: 700;
     box-shadow: 0 0 1rem rgb(0,0,0);
