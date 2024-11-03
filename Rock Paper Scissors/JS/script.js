@@ -14,6 +14,8 @@ const compScorePara = document.querySelector("#comp-score");
 const scoreBoard = document.querySelector("score-board");
 const divs = document.querySelectorAll(".score");
 const back = document.querySelector(".back");
+modeBtn2.classList.add("toggle");
+
 
 // Setting default mode to light mode
 let mode = "Light mode";

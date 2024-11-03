@@ -15,33 +15,67 @@ body {
 }
 
 /* Button designing */
-.mode {
-    padding: 1rem;
-    font-size: 1rem;
-    font-weight: 600;
+.mode1 {
+    position: fixed;
+    top: 4%;
+    right: 2%;
+    padding: 0.4rem;
     border: none;
     border-radius: 2rem;
-    background-color: #b2bd7e;
-    color: #ffffff;
-    position: fixed;
-    top: 85%;
-    right: 4%;
-    text-shadow: 0 0 1rem rgb(0,0,0);
     box-shadow: 0 0 1rem rgb(0,0,0);
+    background-color: #5c5346;
+    display: flex;
+    cursor: pointer;
 }
 
-.mode:active {
-    background-color: #749c75;
+.mode1 img {
+    width: 25px;
+    height: 25px;
 }
 
-.mode:hover {
-    transform: scale(1.2);
-    transition: transform 0.5s ease-in-out;
+.mode1:active {
+    background-color: #181f1c;
+}
+
+.mode1:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s ease-in-out
+}
+
+.mode2 {
+    position: fixed;
+    top: 4%;
+    right: 2%;
+    padding: 0.4rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgb(0,0,0);
+    display: flex;
+    background-color: #91a6ff;
+    cursor: pointer;
+}
+
+.mode2 img {
+    width: 25px;
+    height: 25px;
+}
+
+.mode2:active {
+    background-color: #181f1c;
+}
+
+.mode2:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s ease-in-out
+}
+
+.toggle {
+    display: none;
 }
 
 .reset-btn {
-    padding: 1rem;
-    font-size: 1rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
     font-weight: 600;
     border: none;
     border-radius: 2rem;
@@ -64,13 +98,13 @@ body {
 }
 
 .back {
-    padding: 1rem;
-    font-size: 1.25rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
     border-radius: 2rem;
     border: none;
-    position: fixed;
-    top: 85%;
-    left: 4%;
+    position: relative;
+    top: 18rem;
+    left: 4rem;
     background-color: #b2bd7e;
     font-weight: 700;
     box-shadow: 0 0 1rem rgb(0,0,0);
@@ -95,18 +129,17 @@ a {
 /* Heading */
 h1 {
     color: #ffffff;
-    /* margin-top: 2rem; */
+    margin-top: 4rem;
     font-size: 4rem;
     text-shadow: 0 0 1rem rgb(0,0,0);
     text-align: center;
-    background-color: #b2bd7e;
-    height: 7rem;
-    line-height: 7rem;
+    height: 4rem;
+    line-height: 4rem;
 }
 
 .category-selection {
     /* border: 2px solid black; */
-    margin-top: 1rem;
+    margin-top: 2rem;
     gap: 10rem;
     display: flex;
     align-items: center;
@@ -115,8 +148,8 @@ h1 {
 }
 
 .category-btn {
-    padding: 1rem;
-    font-size: 1rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
     border: none;
     border-radius: 2rem;
     background-color: #b2bd7e;
@@ -139,22 +172,23 @@ h1 {
 .keyboard {
     /* border: 2px solid black; */
     margin-top: 1rem;
-    width: 40vw;
-    height: 40vh;
+    width: 30vw;
+    height: 30vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
     position: fixed;
-    left: 4%;
+    left: 11%;
     margin-top: 2rem;
-    max-width: 500px;
+    width: 350px;
+    z-index: 1;
 }
 
 .key {
-    padding: 1rem;
-    font-size: 1rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
     background-color: #b2bd7e;
     /* border: 2px solid black; */
     color: #ffffff;
@@ -179,14 +213,14 @@ h1 {
     /* border: 10px solid #6a5d7b; */
     background-color: #b2bd7e;
     box-shadow: 0 0 1rem rgb(0,0,0);
-    height: 40vh;
-    width: 40vw;
+    height: 30vh;
+    width: 30vw;
     margin-top: 1rem;
     border-radius: 1rem;
     position: fixed;
     right: 4%;
     margin-top: 2rem;
-    font-size: 4rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,7 +234,7 @@ h1 {
     /* border: 2px solid black; */
     padding: 1rem;
     position: fixed;
-    top: 85%;
+    top: 73%;
     left: 12%;
     right: 63%;
     background-color: #b2bd7e;

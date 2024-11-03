@@ -22,6 +22,8 @@ let changeLink = document.querySelector(".change-link");
 playerTwo.classList.remove("turn");
 gameChange.classList.add("hide");
 resetBtn.classList.remove("reset-btn-2");
+modeBtn2.classList.add("toggle");
+
 
 
 let mode = "Light mode";

@@ -4,8 +4,9 @@ const h1 = document.querySelector("h1");
 const consequenceBox = document.querySelector(".consequence-box");
 const keyboardKeys = document.querySelector(".keyboard");
 const endMsg = document.querySelector(".end-message");
-const modeBtn = document.querySelector(".mode");
 const body = document.querySelector("body");
+let modeBtn1 = document.querySelector("#mode1");
+let modeBtn2 = document.querySelector("#mode2");
 const back = document.querySelector(".back");
 const backLink = document.querySelector(".back-link");
 const guessedContainer = document.querySelector(".guessed-container");
@@ -13,12 +14,14 @@ const categorySelection = document.querySelector(".category-selection");
 const gameContainer = document.querySelector(".game-container");
 const remainingAttempts = document.querySelector(".attempts-left");
 const catBtns = document.querySelectorAll(".cat-btn");
+modeBtn2.classList.add("toggle");
+
 
 let mode = "Light mode";
 
 const darkMode = () => {
-    modeBtn.innterText = "Activate Light Mode!";
-    modeBtn.classList.add("dark-layout", "dark-layout-2");
+    modeBtn1.classList.add("toggle");
+    modeBtn2.classList.remove("toggle");
     resetBtn.classList.add("dark-layout", "dark-layout-2");
     body.classList.add("body-dark");
     h1.classList.add("dark-layout", "dark-layout-2");
@@ -36,8 +39,8 @@ const darkMode = () => {
 }
 
 const lightMode = () => {
-    modeBtn.innterText = "Activate Dark Mode!";
-    modeBtn.classList.remove("dark-layout", "dark-layout-2");
+    modeBtn2.classList.add("toggle");
+    modeBtn1.classList.remove("toggle");
     resetBtn.classList.remove("dark-layout", "dark-layout-2");
     body.classList.remove("body-dark");
     h1.classList.remove("dark-layout", "dark-layout-2");
@@ -65,7 +68,8 @@ const toggleMode = () => {
     }
 }
 
-modeBtn.addEventListener("click", toggleMode);
+modeBtn1.addEventListener("click", toggleMode);
+modeBtn2.addEventListener("click", toggleMode);
 
 const fruits = ['apple', 'banana', 'grape', 'mango', 'orange'];
 const animals = ['elephant', 'tiger', 'lion', 'giraffe', 'monkey'];
