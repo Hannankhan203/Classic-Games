@@ -6,9 +6,11 @@ const userInput = document.querySelector(".user-input");
 const submitBtn = document.querySelector(".submit-btn");
 const result = document.querySelector(".result");
 const newGame = document.querySelector(".new-game");
-const modeBtn = document.querySelector(".mode");
+const modeBtn1 = document.querySelector("#mode1");
+const modeBtn2 = document.querySelector("#mode2");
 const back = document.querySelector(".back");
 const backLink = document.querySelector(".back-link");
+modeBtn2.classList.add("toggle");
 
 const words = ["javascript", "programming", "compiler", "keyboard", "hacking", "computer", "laptop", "development"];
 let currentWord = "";
@@ -52,8 +54,8 @@ window.onload = loadNewWord;
 let mode = "Light mode";
 
 const darkMode = () => {
-    modeBtn.innerText = "Activate Light Mode!";
-    modeBtn.classList.add("dark-layout", "dark-layout-2");
+    modeBtn1.classList.add("toggle");
+    modeBtn2.classList.remove("toggle");
     h1.classList.add("dark-layout", "dark-layout-2");
     submitBtn.classList.add("dark-layout", "dark-layout-2");
     newGame.classList.add("dark-layout", "dark-layout-2");
@@ -66,8 +68,8 @@ const darkMode = () => {
 }
 
 const lightMode = () => {
-    modeBtn.innerText = "Activate Mode Mode!";
-    modeBtn.classList.remove("dark-layout", "dark-layout-2");
+    modeBtn1.classList.remove("toggle");
+    modeBtn2.classList.add("toggle");
     h1.classList.remove("dark-layout", "dark-layout-2");
     submitBtn.classList.remove("dark-layout", "dark-layout-2");
     newGame.classList.remove("dark-layout", "dark-layout-2");
@@ -94,4 +96,5 @@ const toggleMode = () => {
 }
 
 
-modeBtn.addEventListener("click", toggleMode);
+modeBtn1.addEventListener("click", toggleMode);
+modeBtn2.addEventListener("click", toggleMode);

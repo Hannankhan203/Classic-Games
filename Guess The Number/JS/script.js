@@ -7,12 +7,14 @@ const resetBtn = document.querySelector(".reset-btn")
 const feedback = document.querySelector(".feedback");
 const resultMsg = document.querySelector(".result-message");
 const guessCountDisplay = document.querySelector(".guess-count");
-const modeBtn = document.querySelector(".mode");
+const modeBtn1 = document.querySelector("#mode1");
+const modeBtn2 = document.querySelector("#mode2");
 const body = document.querySelector("body");
 const range = document.querySelector(".range");
 const guessText = document.querySelector(".guess-text");
 const back = document.querySelector(".back");
 const backLink = document.querySelector(".back-link");
+modeBtn2.classList.add("toggle");
 
 
 let randomNumber = Math.floor(Math.random() * 100) + 1;
@@ -21,13 +23,13 @@ let guessCount = 0;
 let mode = "Light mode";
 
 const darkMode = () => {
-    modeBtn.innerText = "Activate Light Mode!"
+    modeBtn1.classList.add("toggle");
+    modeBtn2.classList.remove("toggle");
     body.classList.add("dark-body");
     h1.classList.add("dark-layout", "dark-layout-2");
     submitBtn.classList.add("dark-layout", "dark-layout-2");
     resetBtn.classList.add("dark-layout", "dark-layout-2");
     guessInput.classList.add("dark-layout", "dark-layout-2");
-    modeBtn.classList.add("dark-layout", "dark-layout-2");
     container.classList.add("dark-container");
     range.classList.add("dark-text");
     guessCountDisplay.classList.add("dark-text");
@@ -37,13 +39,13 @@ const darkMode = () => {
 }
 
 const lightMode = () => {
-    modeBtn.innerText = "Activate Dark Mode!"
+    modeBtn1.classList.remove("toggle");
+    modeBtn2.classList.add("toggle");
     body.classList.remove("dark-body");
     h1.classList.remove("dark-layout", "dark-layout-2");
     submitBtn.classList.remove("dark-layout", "dark-layout-2");
     resetBtn.classList.remove("dark-layout", "dark-layout-2");
     guessInput.classList.remove("dark-layout", "dark-layout-2");
-    modeBtn.classList.remove("dark-layout", "dark-layout-2");
     container.classList.remove("dark-container");
     range.classList.remove("dark-text");
     guessCountDisplay.classList.remove("dark-text");
@@ -62,7 +64,8 @@ const toggleMode = () => {
     }
 }
 
-modeBtn.addEventListener("click", toggleMode);
+modeBtn1.addEventListener("click", toggleMode);
+modeBtn2.addEventListener("click", toggleMode);
 
 const checkGuess = () => {
     const userGuess = Number(guessInput.value);
