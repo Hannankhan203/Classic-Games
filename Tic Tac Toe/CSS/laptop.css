@@ -1,0 +1,19 @@
+/* Buttons deigning */
+
+/* Back button */
+.back {
+    right: 22rem;
+}
+
+/* Players */
+.player-one {
+    left: 5%;
+}
+.player-two {
+    right: 5%;
+}
+
+h1 {
+    height: 7rem;
+    line-height: 7rem;
+}

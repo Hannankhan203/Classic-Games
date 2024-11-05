@@ -1,0 +1,88 @@
+/* Back button */
+.back {
+    padding: 0.8rem;
+    right: 18rem;
+}
+
+.back img {
+    width: 25px;
+}
+
+/* Change game button */
+.change-game {
+    padding: 1.3rem;
+    font-size: 1rem;
+}
+
+/* Reset Button */
+.reset-btn {
+    padding: 1.3rem;
+    font-size: 1rem;
+}
+
+/* New button */
+.new-btn {
+    padding: 1.3rem;
+    font-size: 1rem;
+    top: 4.3rem;
+    left: 8rem;
+}
+
+/* Heading */
+h1 {
+    height: 6rem;
+    line-height: 6rem;
+    font-size: 3rem;
+    margin-top: 3rem;
+    /* border: 2px solid black; */
+}
+
+
+/* Winner message */
+.msg {
+    font-size: 8vmin;
+}
+
+.draw-msg {
+    font-size: 8vmin;
+}
+
+/* Players */
+.player-one, .player-two {
+    font-size: 1.5rem;
+}
+
+.player-one {
+    left: 5%;
+}
+.player-two {
+    right: 5%;
+}
+
+.reset-btn-2 {
+    position: relative;
+    bottom: 6.8rem;
+    left: 8rem;
+}
+
+/* Dark mode body */
+.body-dark {
+    background: radial-gradient(circle, #000, #707070)
+}
+
+/* Dark mode layout */
+.darkLayout {
+    color: #19647e;
+}
+
+.darkLayout2 {
+    background: radial-gradient(circle, #00bfff, #bcc3ca);
+}
+
+.darkBox {
+    background: radial-gradient(circle, #00bfff, #bcc3ca);
+}
+
+.dark-turn {
+    color:#eef0f2;
+}

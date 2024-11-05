@@ -1,0 +1,85 @@
+/* Back button */
+.back {
+    padding: 0.5rem;
+    bottom: 8rem;
+    right: 13rem;
+}
+
+.back img {
+    width: 20px;
+}
+
+/* Mode button */
+.mode1 {
+    right: 2%;
+    padding: 0.2rem;
+    border: 2px solid black;
+    border-radius: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgb(0,0,0);
+    display: flex;
+    cursor: pointer;
+}
+
+.mode1 img {
+    width: 15px;
+}
+
+.mode2 {
+    padding: 0.2rem;
+    border: 2px solid black;
+}
+
+.mode2 img {
+    width: 15px;
+}
+
+.change-game {
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+
+/* Reset Button */
+.reset-btn {
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+
+/* New button */
+.new-btn {
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+
+/* Heading */
+h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+/* Winner message */
+.msg {
+    font-size: 6vmin;
+}
+
+
+/* Draw message */
+.draw-msg {
+    font-size: 6vmin;
+}
+
+/* Players */
+.player-one, .player-two {
+    font-size: 1rem;
+}
+
+.player-one {
+    left: 5%;
+}
+.player-two {
+    right: 5%;
+}
+
+.reset-btn-2 {
+    bottom: 7.8rem;
+}

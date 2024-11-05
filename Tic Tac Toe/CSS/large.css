@@ -83,7 +83,7 @@ a {
     top: 4%;
     right: 2%;
     padding: 0.4rem;
-    border: 4px solid black;
+    border: none;
     border-radius: 2rem;
     box-shadow: 0 0 1rem rgb(0,0,0);
     background-color: #000;

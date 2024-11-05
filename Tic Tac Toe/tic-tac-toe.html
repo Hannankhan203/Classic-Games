@@ -1,57 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/fonts.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" media="screen and (max-width:740px)" href="CSS/phone.css">
-    <link rel="stylesheet" media="screen and (max-width:650px)" href="CSS/phone2.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/fonts.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:1400px)"
+      href="CSS/large.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:1200px)"
+      href="CSS/normal.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:992px)"
+      href="CSS/laptop.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768px)"
+      href="CSS/tablets.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:576px)"
+      href="CSS/mobile.css"
+    />
     <title>Tic Tac Toe</title>
-</head>
-<body class="body">
+  </head>
+  <body class="body">
     <!-- Toggle Mode button -->
-    <button class="mode2" id="mode2" title="Light Mode"><img src="../Images/Light Mode Icon.png" alt="Light Mode Icon"></button>
-    <button class="mode1" id="mode1" title="Dark Mode"><img src="../Images/Dark Mode Icon.png" alt="Dark Mode Icon"></button>
+    <button class="mode2" id="mode2" title="Light Mode">
+      <img src="../Images/Light Mode Icon.png" alt="Light Mode Icon" />
+    </button>
+    <button class="mode1" id="mode1" title="Dark Mode">
+      <img src="../Images/Dark Mode Icon.png" alt="Dark Mode Icon" />
+    </button>
     <!-- Message that will show the winner -->
     <div class="msg-container hide">
-        <p id="msg" class="msg">
-            Winner!
-        </p>
-        <!-- New game button -->
-        <button id="new-btn" class="new-btn">New Game!</button>
+      <p id="msg" class="msg">Winner!</p>
+      <!-- New game button -->
+      <button id="new-btn" class="new-btn">New Game!</button>
     </div>
     <!-- main game code -->
     <main>
-        <h1>Tic Tac Toe</h1>
-        <div class="container">
-            <p class="player-one turn">Player 1 (O)</p>
-            <div class="game">
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-            </div>
-            <p class="player-two turn">Player 2 (X)</p>
+      <h1>Tic Tac Toe</h1>
+      <div class="container">
+        <p class="player-one turn">Player 1 (O)</p>
+        <div class="game">
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
         </div>
-        <!-- draw game scenario -->
-        <div class="msg-container-draw hide">
+        <p class="player-two turn">Player 2 (X)</p>
+      </div>
+      <!-- draw game scenario -->
+      <div class="msg-container-draw hide">
         <p id="draw-msg" class="draw-msg">Game draw!</p>
-        </div>
-        <!-- Reset game button -->
-        <button id="reset-btn" class="reset-btn reset-btn-2">Reset Game!</button>
+      </div>
+      <!-- Reset game button -->
+      <button id="reset-btn" class="reset-btn reset-btn-2">Reset Game!</button>
     </main>
     <!-- Change game button -->
     <div class="change-game-container change-game-2">
-    <button class="change-game"><a class="change-link" href="../index.html">Change Game</a></button>
+      <button class="change-game">
+        <a class="change-link" href="../index.html">Change Game</a>
+      </button>
     </div>
     <!-- back button -->
-    <button class="back"><a class="back-link" href="../index.html"><img src="../Images/corner-up-left-fill.png" alt="Back button"></a></button>
+    <button class="back">
+      <a class="back-link" href="../index.html"
+        ><img src="../Images/corner-up-left-fill.png" alt="Back button"
+      /></a>
+    </button>
     <script src="JS/script.js"></script>
-</body>
+  </body>
 </html>
