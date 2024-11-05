@@ -204,6 +204,7 @@ const showDraw = () => {
     resetBtn.classList.remove("hide");
     msgContainer.classList.add("hide");
     back.classList.add("hide");
+    resetBtn.classList.add("reset-btn")
 }
 
 // making an arrow function and using for of loop to check the winning patterns and to check the draw scenario as well
