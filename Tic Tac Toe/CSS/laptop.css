@@ -26,3 +26,23 @@ h1 {
     gap: 10rem;
     /* border: 2px solid black; */
 }
+
+.msg {
+    color: #25171a;
+    font-size: 9vmin;
+    text-shadow: 0 0 1rem rgb(0,0,0);
+}
+
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4.5rem;
+    /* border: 2px solid black; */
+}
+
+.hide {
+    display: none;
+}

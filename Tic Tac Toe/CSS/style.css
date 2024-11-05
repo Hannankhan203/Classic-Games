@@ -178,7 +178,7 @@ a {
     border: 2px solid #98c1d9;
     box-shadow: 0 0 1rem rgb(0,0,0);
     text-shadow: 0 0 1rem rgb(0,0,0);
-    position: relative;
+    position: fixed;
     top: 4rem;
     left: 8rem;
 }
