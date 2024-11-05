@@ -12,16 +12,18 @@ let mode = "Light mode";
 // Dark mode function
 const darkMode = () => {
   body.classList.add("body-dark-mode");
+  body.classList.remove("body");
   games.forEach((game) => {
-      game.classList.add("dark-mode-bg");
-    });
-    modeBtn1.classList.add("toggle");
-    modeBtn2.classList.remove("toggle");
+    game.classList.add("dark-mode-bg");
+  });
+  modeBtn1.classList.add("toggle");
+  modeBtn2.classList.remove("toggle");
 };
 
 // Light mode function
 const lightMode = () => {
   body.classList.remove("body-dark-mode");
+  body.classList.add("body");
   h1.classList.remove("dark-mode-bg");
   games.forEach((game) => {
       game.classList.remove("dark-mode-bg");

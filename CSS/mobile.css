@@ -1,0 +1,43 @@
+/* Mode button */
+.mode1 {
+    padding: 0.2rem;
+    border: 2px solid black;
+}
+
+.mode1 img {
+    width: 15px;
+}
+
+.mode2 {
+    padding: 0.2rem;
+    border: 2px solid black;
+}
+
+.mode2 img {
+    width: 15px;
+}
+
+/* Options */
+.options {
+    /* border: 2px solid black; */
+    height: 65vh;
+    width: 60%;
+    position: relative;
+    left: 7rem;
+}
+
+/* Game Button */
+.game img {
+    width: 70px;
+}
+
+/* Heading */
+h1 {
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+}
+
+.info {
+    font-size: 1rem;
+}

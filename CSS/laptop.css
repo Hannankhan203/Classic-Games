@@ -1,0 +1,21 @@
+/* Options */
+.options {
+    /* border: 2px solid black; */
+    height: 80vh;
+    gap: 2rem;
+    width: 60%;
+    position: relative;
+    left: 11rem;
+}
+
+/* Game Button */
+.game img {
+    width: 130px;
+}
+
+
+/* Heading */
+h1 {
+    height: 7rem;
+    line-height: 7rem;
+}
