@@ -70,9 +70,15 @@ let genCompChoice = () => {
 const drawGame = (userChoice, compChoice) => {
   msg.innerText = "Game was draw! Play again.";
   msg.classList.remove("right");
-  msg.classList.add("draw");
   msg.classList.remove("wrong");
-  msg.classList.add("dark-btn");
+  if (mode === "Light mode") {
+    msg.classList.add("draw");
+    msg.classList.remove("dark-btn");
+  }
+  else if (mode === "Dark mode") {
+    msg.classList.remove("draw");
+    msg.classList.add("dark-btn");
+  }
 };
 
 // Showing winner
