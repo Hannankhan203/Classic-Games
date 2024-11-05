@@ -75,6 +75,14 @@ body {
 }
 
 /* Options */
+
+.option-container {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .options {
     /* border: 2px solid black; */
     height: 65vh;
@@ -183,5 +191,5 @@ h1 {
 
 /* Classes applied through JavaScript */
 .body-dark-mode {
-    background: radial-gradient(circle, #000, #999898);
+    background: radial-gradient(circle, #000, #707070);
 }
