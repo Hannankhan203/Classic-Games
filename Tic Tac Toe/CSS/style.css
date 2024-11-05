@@ -328,7 +328,7 @@ h1 {
 
 /* Dark mode body */
 .body-dark {
-    background: radial-gradient(circle, #000, #707070)
+    background: radial-gradient(circle, #000, #707070);
 }
 
 /* Dark mode layout */
