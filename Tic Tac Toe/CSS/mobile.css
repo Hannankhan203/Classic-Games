@@ -1,8 +1,9 @@
 /* Back button */
 .back {
     padding: 0.5rem;
-    bottom: 8rem;
-    right: 13rem;
+    bottom: 3rem;
+    right: 16rem;
+    position: fixed;
 }
 
 .back img {
@@ -82,4 +83,13 @@ h1 {
 
 .reset-btn-2 {
     bottom: 7.8rem;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    /* border: 2px solid black; */
 }

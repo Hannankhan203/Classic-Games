@@ -209,6 +209,7 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 18rem;
     /* border: 2px solid black; */
 }
 

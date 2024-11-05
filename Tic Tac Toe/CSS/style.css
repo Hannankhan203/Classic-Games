@@ -207,8 +207,9 @@ h1 {
 .container {
     height: 70vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    gap: 20rem;
     /* border: 2px solid black; */
 }
 
@@ -292,12 +293,12 @@ h1 {
 }
 
 .player-one {
-    position: relative;
+    position: fixed;
     left: 10%;
     bottom: 10%;
 }
 .player-two {
-    position: relative;
+    position: fixed;
     right: 10%;
     bottom: 10%;
 }

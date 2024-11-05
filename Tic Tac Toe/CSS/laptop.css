@@ -17,3 +17,12 @@ h1 {
     height: 7rem;
     line-height: 7rem;
 }
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10rem;
+    /* border: 2px solid black; */
+}

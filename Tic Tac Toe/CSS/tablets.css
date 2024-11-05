@@ -65,24 +65,11 @@ h1 {
     left: 8rem;
 }
 
-/* Dark mode body */
-.body-dark {
-    background: radial-gradient(circle, #000, #707070)
-}
-
-/* Dark mode layout */
-.darkLayout {
-    color: #19647e;
-}
-
-.darkLayout2 {
-    background: radial-gradient(circle, #00bfff, #bcc3ca);
-}
-
-.darkBox {
-    background: radial-gradient(circle, #00bfff, #bcc3ca);
-}
-
-.dark-turn {
-    color:#eef0f2;
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 8rem;
+    /* border: 2px solid black; */
 }
