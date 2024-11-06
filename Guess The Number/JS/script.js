@@ -26,7 +26,7 @@ const darkMode = () => {
     modeBtn1.classList.add("toggle");
     modeBtn2.classList.remove("toggle");
     body.classList.add("dark-body");
-    h1.classList.add("dark-layout", "dark-layout-2");
+    h1.classList.add("dark-layout");
     submitBtn.classList.add("dark-layout", "dark-layout-2");
     resetBtn.classList.add("dark-layout", "dark-layout-2");
     guessInput.classList.add("dark-layout", "dark-layout-2");
@@ -42,7 +42,7 @@ const lightMode = () => {
     modeBtn1.classList.remove("toggle");
     modeBtn2.classList.add("toggle");
     body.classList.remove("dark-body");
-    h1.classList.remove("dark-layout", "dark-layout-2");
+    h1.classList.remove("dark-layout");
     submitBtn.classList.remove("dark-layout", "dark-layout-2");
     resetBtn.classList.remove("dark-layout", "dark-layout-2");
     guessInput.classList.remove("dark-layout", "dark-layout-2");
