@@ -149,6 +149,7 @@ h1 {
     /* border: 2px solid black; */
     margin-top: 2rem;
     gap: 2rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,6 +199,15 @@ h1 {
 .key {
     padding: 0.3rem;
     font-size: 0.3rem;
+    left: 11%;
+    margin-top: 2rem;
+    width: 350px;
+    z-index: 1;
+}
+
+.key {
+    padding: 0.8rem;
+    font-size: 0.8rem;
     background: radial-gradient(circle, #6969b3, #4b244a);
     /* border: 2px solid black; */
     color: #25171a;
