@@ -16,12 +16,12 @@ body {
 
 h1 {
     color: #25171a;
-    margin-top: 4rem;
-    font-size: 4rem;
+    margin-top: 3rem;
+    font-size: 3rem;
     text-shadow: 0 0 1rem rgb(0,0,0);
     text-align: center;
-    height: 4rem;
-    line-height: 4rem;
+    height: 6rem;
+    line-height: 6rem;
 }
 
 .container {
@@ -42,7 +42,7 @@ h1 {
 .range {
     /* border: 2px solid black; */
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #25171a;
     margin-top: 1rem;
     text-shadow: 0 0 1rem rgb(0,0,0);
@@ -53,7 +53,7 @@ h1 {
     width: 30vw;
     position: fixed;
     left: 35%;
-    top: 40%;
+    top: 43%;
     padding: 0.5rem 4rem 0.5rem 1rem;
     border-radius: 2rem;
     border: none;
@@ -68,7 +68,7 @@ h1 {
     display: flex;
     gap: 2rem;
     position: fixed;
-    top: 50%;
+    top: 53%;
     /* left: 38.5%; */
     /* border: 2px solid black; */
     width: 59.7vw;
@@ -76,7 +76,7 @@ h1 {
 }
 
 .submit-guess {
-    padding: 1rem;
+    padding: 0.8rem;
     font-size: 1rem;
     box-shadow: 0 0 1rem rgb(0,0,0);
     text-shadow: 0 0 1rem rgb(0,0,0);
@@ -98,7 +98,7 @@ h1 {
 }
 
 .reset-btn {
-    padding: 1rem;
+    padding: 0.8rem;
     font-size: 1rem;
     box-shadow: 0 0 1rem rgb(0,0,0);
     text-shadow: 0 0 1rem rgb(0,0,0);
@@ -127,7 +127,7 @@ h1 {
     top: 65%;
     gap: 2rem;
     width: 55%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #25171a;
     align-items: center;
     font-weight: 600;
@@ -194,7 +194,7 @@ h1 {
 }
 
 .back {
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 2rem;
     border: none;
     position: fixed;
@@ -208,8 +208,8 @@ h1 {
 }
 
 .back img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 .back:active {
@@ -217,7 +217,7 @@ h1 {
 }
 
 .back:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: transform 0.5s ease-in-out
 }
 
