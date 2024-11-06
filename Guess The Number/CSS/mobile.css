@@ -16,21 +16,21 @@ body {
 
 h1 {
     color: #25171a;
-    margin-top: 3rem;
-    font-size: 3rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
     text-shadow: 0 0 1rem rgb(0,0,0);
     text-align: center;
-    height: 6rem;
-    line-height: 6rem;
+    height: 4rem;
+    line-height: 4rem;
 }
 
 .container {
     /* border: 2px solid black; */
     position: fixed;
-    left: 20%;
-    top: 25%;
-    height: 60vh;
-    width: 60vw;
+    left: 2.5%;
+    top: 15%;
+    height: 50vh;
+    width: 95vw;
     display: flex;
     justify-content: center;
     background: radial-gradient(circle, #4b244a, #6969b3);
@@ -42,7 +42,7 @@ h1 {
 .range {
     /* border: 2px solid black; */
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #25171a;
     margin-top: 1rem;
     text-shadow: 0 0 1rem rgb(0,0,0);
@@ -50,10 +50,10 @@ h1 {
 }
 
 .guess-input {
-    width: 30vw;
+    width: 70vw;
     position: fixed;
-    left: 35%;
-    top: 43%;
+    left: 15%;
+    top: 30%;
     padding: 0.5rem 4rem 0.5rem 1rem;
     border-radius: 2rem;
     border: none;
@@ -68,16 +68,16 @@ h1 {
     display: flex;
     gap: 2rem;
     position: fixed;
-    top: 53%;
+    top: 40%;
     /* left: 38.5%; */
     /* border: 2px solid black; */
-    width: 59.7vw;
+    width: 75vw;
     justify-content: center;
 }
 
 .submit-guess {
-    padding: 0.8rem;
-    font-size: 1rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
     box-shadow: 0 0 1rem rgb(0,0,0);
     text-shadow: 0 0 1rem rgb(0,0,0);
     border: none;
@@ -98,8 +98,8 @@ h1 {
 }
 
 .reset-btn {
-    padding: 0.8rem;
-    font-size: 1rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
     box-shadow: 0 0 1rem rgb(0,0,0);
     text-shadow: 0 0 1rem rgb(0,0,0);
     border: none;
@@ -124,10 +124,10 @@ h1 {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 65%;
+    top: 50%;
     gap: 2rem;
     width: 55%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #25171a;
     align-items: center;
     font-weight: 600;
@@ -139,8 +139,8 @@ h1 {
     position: fixed;
     top: 4%;
     right: 2%;
-    padding: 0.4rem;
-    border: 4px solid black;
+    padding: 0.2rem;
+    border: 2px solid black;
     border-radius: 2rem;
     box-shadow: 0 0 1rem rgb(0,0,0);
     background-color: #fff;
@@ -149,8 +149,8 @@ h1 {
 }
 
 .mode1 img {
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
 }
 
 .mode1:active {
@@ -166,8 +166,8 @@ h1 {
     position: fixed;
     top: 4%;
     right: 2%;
-    padding: 0.4rem;
-    border: 4px solid black;
+    padding: 0.2rem;
+    border: 2px solid black;
     border-radius: 2rem;
     box-shadow: 0 0 1rem rgb(0,0,0);
     display: flex;
@@ -176,8 +176,8 @@ h1 {
 }
 
 .mode2 img {
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
 }
 
 .mode2:active {
@@ -194,7 +194,7 @@ h1 {
 }
 
 .back {
-    padding: 0.8rem;
+    padding: 0.3rem;
     border-radius: 2rem;
     border: none;
     position: fixed;
@@ -208,8 +208,8 @@ h1 {
 }
 
 .back img {
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
 }
 
 .back:active {
