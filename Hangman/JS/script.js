@@ -24,7 +24,7 @@ const darkMode = () => {
     modeBtn2.classList.remove("toggle");
     resetBtn.classList.add("dark-layout", "dark-layout-2");
     body.classList.add("body-dark");
-    h1.classList.add("dark-layout", "dark-layout-2");
+    h1.classList.add("dark-layout");
     back.classList.add("dark-layout-2");
     backLink.classList.add("dark-layout");
     consequenceBox.classList.add("dark-border", "dark-layout");
@@ -43,7 +43,7 @@ const lightMode = () => {
     modeBtn1.classList.remove("toggle");
     resetBtn.classList.remove("dark-layout", "dark-layout-2");
     body.classList.remove("body-dark");
-    h1.classList.remove("dark-layout", "dark-layout-2");
+    h1.classList.remove("dark-layout");
     back.classList.remove("dark-layout-2");
     backLink.classList.remove("dark-layout");
     consequenceBox.classList.remove("dark-border", "dark-layout");
