@@ -10,16 +10,16 @@ body {
 }
 
 .body {
-    background: radial-gradient(circle, #98c1d9, #25171a);
+    background: radial-gradient(circle, #5d5f60, #25171a);
 }
 
 h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #25171a;
-    height: 6rem;
-    line-height: 6rem;
-    margin-top: 3rem;
+    height: 4rem;
+    line-height: 4rem;
+    margin-top: 2rem;
     text-shadow: 0 0 1rem rgb(0,0,0);
 }
 
@@ -34,10 +34,10 @@ h1 {
     /* border: 2px solid black; */
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    width: 250px;
     margin-top: 2rem;
     font-size: 1.2rem;;
-    gap: 10rem;
+    gap: 2rem;
     color: #25171a;
     text-shadow: 0 0 1rem rgb(0,0,0);
 }
@@ -54,8 +54,8 @@ h1 {
 
 
 .card {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     perspective: 1000px;
     
 }
@@ -80,7 +80,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .card.is-flipped .front {
@@ -104,14 +104,13 @@ h1 {
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
-    background-color: white;
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0);
     text-shadow: 0 0 1rem rgb(0,0,0);
     background: radial-gradient(circle, #4b244a, #6969b3);
     color: #25171a;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .hidden {
@@ -120,8 +119,8 @@ h1 {
 
 .restart-button {
     margin-top: 15px;
-    padding: 1rem;
-    font-size: 1rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
     border-radius: 2rem;
     border: none;
     box-shadow: 0 0 1rem rgb(0,0,0);
@@ -144,8 +143,8 @@ h1 {
     position: fixed;
     top: 4%;
     right: 2%;
-    padding: 0.4rem;
-    border: 4px solid black;
+    padding: 0.2rem;
+    border: 2px solid black;
     border-radius: 2rem;
     box-shadow: 0 0 1rem rgb(0,0,0);
     background-color: #fff;
@@ -154,8 +153,8 @@ h1 {
 }
 
 .mode1 img {
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
 }
 
 .mode1:active {
@@ -171,8 +170,8 @@ h1 {
     position: fixed;
     top: 4%;
     right: 2%;
-    padding: 0.4rem;
-    border: 4px solid black;
+    padding: 0.2rem;
+    border: 2px solid black;
     border-radius: 2rem;
     box-shadow: 0 0 1rem rgb(0,0,0);
     display: flex;
@@ -181,8 +180,8 @@ h1 {
 }
 
 .mode2 img {
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
 }
 
 .mode2:active {
@@ -199,7 +198,7 @@ h1 {
 }
 
 .go-back {
-    padding: 0.8rem;
+    padding: 0.3rem;
     border-radius: 2rem;
     border: none;
     position: fixed;
@@ -213,7 +212,7 @@ h1 {
 }
 
 .go-back img {
-    width: 25px;
+    width: 15px;
 }
 
 .go-back:active {
