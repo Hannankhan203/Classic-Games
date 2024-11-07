@@ -56,7 +56,7 @@ let mode = "Light mode";
 const darkMode = () => {
     modeBtn1.classList.add("toggle");
     modeBtn2.classList.remove("toggle");
-    h1.classList.add("dark-layout", "dark-layout-2");
+    h1.classList.add("dark-layout");
     submitBtn.classList.add("dark-layout", "dark-layout-2");
     newGame.classList.add("dark-layout", "dark-layout-2");
     userInput.classList.add("dark-layout", "dark-layout-2");
@@ -70,7 +70,7 @@ const darkMode = () => {
 const lightMode = () => {
     modeBtn1.classList.remove("toggle");
     modeBtn2.classList.add("toggle");
-    h1.classList.remove("dark-layout", "dark-layout-2");
+    h1.classList.remove("dark-layout");
     submitBtn.classList.remove("dark-layout", "dark-layout-2");
     newGame.classList.remove("dark-layout", "dark-layout-2");
     userInput.classList.remove("dark-layout", "dark-layout-2");
