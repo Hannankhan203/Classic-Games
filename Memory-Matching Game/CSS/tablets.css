@@ -15,11 +15,11 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #25171a;
-    height: 4rem;
-    line-height: 4rem;
-    margin-top: 4rem;
+    height: 6rem;
+    line-height: 6rem;
+    margin-top: 3rem;
     text-shadow: 0 0 1rem rgb(0,0,0);
 }
 
@@ -36,7 +36,7 @@ h1 {
     justify-content: space-between;
     width: 400px;
     margin-top: 2rem;
-    font-size: 1.5rem;;
+    font-size: 1.2rem;;
     gap: 10rem;
     color: #25171a;
     text-shadow: 0 0 1rem rgb(0,0,0);
@@ -54,8 +54,8 @@ h1 {
 
 
 .card {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     perspective: 1000px;
     
 }
@@ -80,7 +80,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .card.is-flipped .front {
@@ -199,7 +199,7 @@ h1 {
 }
 
 .go-back {
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 2rem;
     border: none;
     position: fixed;
@@ -213,7 +213,7 @@ h1 {
 }
 
 .go-back img {
-    width: 30px;
+    width: 25px;
 }
 
 .go-back:active {
