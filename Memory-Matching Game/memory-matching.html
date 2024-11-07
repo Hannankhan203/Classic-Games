@@ -3,15 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Memory Matching</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link
       rel="stylesheet"
-      media="screen and (max-width:640px)"
-      href="CSS/phone.css"
+      media="screen and (max-width:1400px)"
+      href="CSS/large.css"
     />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:1200px)"
+      href="CSS/normal.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:992px)"
+      href="CSS/laptop.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768px)"
+      href="CSS/tablets.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:576px)"
+      href="CSS/mobile.css"
+    />
+    <title>Memory Matching</title>
   </head>
-  <body>
+  <body class="body">
     <h1>Memory Matching</h1>
 
     <div class="main-container">
@@ -99,9 +120,13 @@
     <button class="mode1" id="mode1" title="Dark Mode">
       <img src="../Images/Dark Mode Icon.png" alt="Dark Mode Icon" />
     </button>
-    <button class="go-back">
-      <a class="back-link" href="../index.html">Back</a>
-    </button>
+    <div class="back-container">
+      <button class="go-back">
+        <a class="back-link" href="../index.html"
+          ><img src="../Images/corner-up-left-fill.png" alt="Back button"
+        /></a>
+      </button>
+      </div>
     <script src="JS/script.js"></script>
   </body>
 </html>
