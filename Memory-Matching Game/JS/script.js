@@ -20,7 +20,7 @@ let mode = "Light mode";
 
 const darkMode = () => {
   body.classList.add("dark-body");
-  h1.classList.add("dark-layout", "dark-layout-2");
+  h1.classList.add("dark-layout");
   restartButton.classList.add("dark-layout", "dark-layout-2");
   backLink.classList.add("dark-layout");
   modeBtn1.classList.add("toggle");
@@ -38,7 +38,7 @@ const darkMode = () => {
 
 const lightMode = () => {
   body.classList.remove("dark-body");
-  h1.classList.remove("dark-layout", "dark-layout-2");
+  h1.classList.remove("dark-layout");
   restartButton.classList.remove("dark-layout", "dark-layout-2");
   backLink.classList.remove("dark-layout");
   modeBtn1.classList.remove("toggle");

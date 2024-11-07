@@ -5,13 +5,18 @@
 }
 
 body {
-    background-color: #5D4E60;
+    text-align: center;
+    font-family: poppins;
+}
+
+.body {
+    background: radial-gradient(circle, #98c1d9, #25171a);
 }
 
 h1 {
     text-align: center;
     font-size: 4rem;
-    color: #EFCEFA;
+    color: #25171a;
     height: 4rem;
     line-height: 4rem;
     margin-top: 4rem;
@@ -33,7 +38,7 @@ h1 {
     margin-top: 2rem;
     font-size: 1.5rem;;
     gap: 10rem;
-    color: #EFCEFA;
+    color: #25171a;
     text-shadow: 0 0 1rem rgb(0,0,0);
 }
 
@@ -66,12 +71,12 @@ h1 {
 }
 
 .front {
-    background-color: #EFCEFA;
+    background: radial-gradient(circle, #4b244a, #6969b3);
 }
 
 .back {
-    background-color: #A88FAC;
-    color: black;
+    background: radial-gradient(circle, #6969b3, #4b244a);
+    color: #25171a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,8 +109,8 @@ h1 {
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0);
     text-shadow: 0 0 1rem rgb(0,0,0);
-    background-color: #5D4E60;
-    color: #EFCEFA;
+    background: radial-gradient(circle, #4b244a, #6969b3);
+    color: #25171a;
     font-size: 1.5rem;
 }
 
@@ -121,12 +126,12 @@ h1 {
     border: none;
     box-shadow: 0 0 1rem rgb(0,0,0);
     text-shadow: 0 0 1rem rgb(0,0,0);
-    background-color: #D4B2D8;
-    color: #EFCEFA;
+    background: radial-gradient(circle, #4b244a, #6969b3);
+    color: #25171a;
 }
 
 .restart-button:active {
-    background-color: #EFCEFA;
+    background: radial-gradient(circle, #6969b3, #4b244a);
 }
 
 .restart-button:hover {
@@ -140,10 +145,10 @@ h1 {
     top: 4%;
     right: 2%;
     padding: 0.4rem;
-    border: none;
+    border: 4px solid black;
     border-radius: 2rem;
     box-shadow: 0 0 1rem rgb(0,0,0);
-    background-color: #5c5346;
+    background-color: #fff;
     display: flex;
     cursor: pointer;
 }
@@ -154,7 +159,7 @@ h1 {
 }
 
 .mode1:active {
-    background-color: #181f1c;
+    background-color: #000;
 }
 
 .mode1:hover {
@@ -167,11 +172,11 @@ h1 {
     top: 4%;
     right: 2%;
     padding: 0.4rem;
-    border: none;
+    border: 4px solid black;
     border-radius: 2rem;
     box-shadow: 0 0 1rem rgb(0,0,0);
     display: flex;
-    background-color: #91a6ff;
+    background-color: #000;
     cursor: pointer;
 }
 
@@ -181,7 +186,7 @@ h1 {
 }
 
 .mode2:active {
-    background-color: #181f1c;
+    background-color: #fff;
 }
 
 .mode2:hover {
@@ -194,46 +199,46 @@ h1 {
 }
 
 .go-back {
-    padding: 0.5rem;
-    font-size: 0.8rem;
+    padding: 1rem;
     border-radius: 2rem;
     border: none;
-    position: relative;
-    top: 4rem;
-    left: 4rem;
-    background-color: #D4B2D8;
+    position: fixed;
+    top: 80%;
+    left: 4%;
+    background: radial-gradient(circle, #6969b3, #4b244a);
     font-weight: 700;
     box-shadow: 0 0 1rem rgb(0,0,0);
     text-shadow: 0 0 1rem rgb(0,0,0);
     /* border: 2px solid black; */
 }
 
+.go-back img {
+    width: 30px;
+}
+
 .go-back:active {
-    background-color: #EFCEFA;
+    background: radial-gradient(circle, #4b244a, #6969b3);
 }
 
 .go-back:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: transform 0.5s ease-in-out
 }
 
-a {
-    color: #EFCEFA;
-    text-decoration: none;
-}
-
 .dark-body {
-    background-color: #000000;
+    background: radial-gradient(circle, #000, #707070);
 }
 
 .dark-layout {
-    color: #78C0E0;
+    color: #19647e;
 }
 
 .dark-layout-2 {
+    background: radial-gradient(circle, #00bfff, #bcc3ca);
     background-color: #0E0E52;
 }
 
 .dark-layout-3 {
+    background: radial-gradient(circle, #bcc3ca, #00bfff);
     background-color: #78C0E0;
 }
