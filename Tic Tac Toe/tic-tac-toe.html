@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../CSS/fonts.css" />
+    <link rel="stylesheet" href="CSS/colors.css">
     <link rel="stylesheet" href="CSS/style.css" />
     <link
       rel="stylesheet"
@@ -34,23 +35,22 @@
   </head>
   <body class="body">
     <!-- Toggle Mode button -->
-    <button class="mode2" id="mode2" title="Light Mode">
-      <img src="../Images/Light Mode Icon.png" alt="Light Mode Icon" />
-    </button>
-    <button class="mode1" id="mode1" title="Dark Mode">
-      <img src="../Images/Dark Mode Icon.png" alt="Dark Mode Icon" />
-    </button>
-    <!-- Message that will show the winner -->
+    <label>
+      <input type="checkbox" id="theme-checkbox" />
+      <span class="check"></span>
+      <span class="botn"></span>
+    </label>
+
+    <!-- Message containers -->
     <div class="msg-container hide">
       <p id="msg" class="msg">Winner!</p>
-      <!-- New game button -->
       <button id="new-btn" class="new-btn">New Game!</button>
     </div>
-    <!-- main game code -->
+
     <main>
       <h1>Tic Tac Toe</h1>
       <div class="container">
-        <p class="player-one turn">Player 1 (O)</p>
+        <p class="player-one">Player 1 (O)</p>
         <div class="game">
           <button class="box"></button>
           <button class="box"></button>
@@ -64,27 +64,23 @@
         </div>
         <p class="player-two turn">Player 2 (X)</p>
       </div>
-      <!-- draw game scenario -->
+
       <div class="msg-container-draw hide">
-        <p id="draw-msg" class="draw-msg">Game draw!</p>
+        <p id="draw-msg" class="draw-msg">Game Draw!</p>
       </div>
-      <!-- Reset game button -->
-      <button id="reset-btn" class="reset-btn reset-btn-2">Reset Game!</button>
+
+      <button id="reset-btn" class="reset-btn">Reset Game!</button>
     </main>
-    <!-- Change game button -->
-    <div class="change-game-container change-game-2">
-      <button class="change-game">
-        <a class="change-link" href="../index.html">Change Game</a>
-      </button>
-    </div>
-    <!-- back button -->
+
+    <!-- Navigation buttons -->
     <div class="back-container">
       <button class="back">
-        <a class="back-link" href="../index.html"
-          ><img src="../Images/corner-up-left-fill.png" alt="Back button"
-        /></a>
+        <a class="back-link" href="../index.html">
+          <img src="../Images/corner-up-left-fill.png" alt="Back" />
+        </a>
       </button>
     </div>
+
     <script src="JS/script.js"></script>
   </body>
 </html>

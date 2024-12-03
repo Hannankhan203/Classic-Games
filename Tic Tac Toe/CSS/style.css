@@ -1,350 +1,293 @@
 /* Universal selector to set everything to 0 */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Body */
-
 body {
-    text-align: center;
-    font-family: poppins;
+  text-align: center;
+  font-family: poppins, sans-serif;
 }
-
-.body {
-    background: radial-gradient(circle, #98c1d9, #25171a);
-}
-
-/* Buttons deigning */
 
 /* Back button */
 .back {
-    padding: 1rem;
-    border-radius: 2rem;
-    border: 2px solid #98c1d9;
-    position: fixed;
-    bottom: 9rem;
-    right: 85%;
-    background: radial-gradient(circle, #6969b3, #4b244a);
-    font-weight: 700;
-    box-shadow: 0 0 1rem rgb(0,0,0);
-    text-shadow: 0 0 1rem rgb(0,0,0);
-    /* border: 2px solid black; */
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 2px solid #98c1d9;
+  position: fixed;
+  bottom: 5rem;
+  right: 90%;
+  font-weight: 700;
+  box-shadow: 0 0 1rem rgb(0, 0, 0);
+  text-shadow: 0 0 1rem rgb(0, 0, 0);
 }
 
 .back img {
-    width: 30px;
-}
-
-.back:active {
-    background: radial-gradient(circle, #4b244a, #6969b3);
+  width: 30px;
 }
 
 .back:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s ease-in-out
+  transform: scale(1.05);
+  transition: transform 0.5s ease-in-out;
 }
 
+/* Remove underline for links */
 a {
-    color: #aeecef;
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Mode button */
-.mode1 {
-    position: fixed;
-    top: 4%;
-    right: 2%;
-    padding: 0.4rem;
-    border: none;
-    border-radius: 2rem;
-    background-color: #fff;
-    box-shadow: 0 0 1rem rgb(0,0,0);
-    display: flex;
-    cursor: pointer;
+label {
+  /* border: 2px solid black; */
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  margin: 20px 0;
 }
 
-.mode1 img {
-    width: 25px;
+label input {
+  width: 40px; /* Custom checkbox size */
+  height: 20px;
+  appearance: none; /* Remove default checkbox style */
+  background-color: #101010;
+  border: 2px solid #444;
+  border-radius: 40px; /* Rounded corners */
+  cursor: pointer;
+  transition: background 0.3s ease;
+  z-index: 1;
+  opacity: 0;
+  position: absolute;
 }
 
-.mode1:active {
-    background-color: #000;
+label .check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  transition: background 0.5s ease;
 }
 
-.mode1:hover {
-    transform: scale(1.02);
-    transition: transform 0.5s ease-in-out
+label .check::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  left: -20px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f00;
+  transition: 0.5s ease;
+  box-shadow: 0 0 5px #f00, 0 0 10px #f00, 0 0 20px #f00, 0 0 40px #f00,
+    0 0 80px #f00;
 }
 
-.mode2 {
-    position: fixed;
-    top: 4%;
-    right: 2%;
-    padding: 0.4rem;
-    border: none;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem rgb(0,0,0);
-    background-color: #000;
-    display: flex;
-    cursor: pointer;
+label input:checked ~ .check::before {
+  background: #f5f5f5;
+  box-shadow: none;
 }
 
-.mode2 img {
-    width: 25px;
+label .check::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  right: -20px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #101010;
+  box-shadow: none;
+  transition: 0.5s ease;
 }
 
-.mode2:active {
-    background-color: #fff;
+label input:checked ~ .check::after {
+  background: #0f0;
+  box-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 20px #0f0, 0 0 40px #0f0,
+    0 0 80px #0f0;
 }
 
-.mode2:hover {
-    transform: scale(1.02);
-    transition: transform 0.5s ease-in-out
+label .botn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 40px;
+  background: #333;
+  transition: left 0.5s ease;
+  box-shadow: inset 0 -20px 15px #292929, inset 0 20px 15px #292929;
 }
 
-.toggle {
-    display: none;
+label .botn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 20px;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  filter: blur(2px);
 }
 
-/* Change game button */
-.change-game-container {
-    position: relative;
-    /* border: 2px solid black; */
-    bottom: 11rem;
-    right: 8rem;
-    display: inline-block;
+label .botn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12px;
+  height: 20px;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  filter: blur(2px);
 }
 
-.change-game {
-    padding: 1.5rem;
-    font-size: 1.2rem;
-    border-radius: 2rem;
-    border: 2px solid #98c1d9;
-    background: radial-gradient(circle, #6969b3, #4b244a);
-    font-weight: 700;
-    box-shadow: 0 0 1rem rgb(0,0,0);
-    text-shadow: 0 0 1rem rgb(0,0,0);
-}
-.change-link {
-    color: #25171a;
-}
-
-.change-game:active {
-    background: radial-gradient(circle, #4b244a, #6969b3);
-}
-
-.change-game:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s ease-in-out
+label input:checked ~ .botn {
+  left: 20px;
 }
 
 /* Reset Button */
 .reset-btn {
-    padding: 1.5rem;
-    font-size: 1.2rem;
-    background: radial-gradient(circle, #6969b3, #4b244a);
-    color: #25171a;
-    font-weight: 700;
-    border-radius: 2rem;
-    border: 2px solid #98c1d9;
-    box-shadow: 0 0 1rem rgb(0,0,0);
-    text-shadow: 0 0 1rem rgb(0,0,0);
-    z-index: 1;
-    position: relative;
-    bottom: 5rem;
-    left: 0rem;
-    /* border: 2px solid black; */
-}
-
-.reset-btn:active {
-    background: radial-gradient(circle, #4b244a, #6969b3);
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 2rem;
+  border: 2px solid #98c1d9;
+  box-shadow: 0 0 1rem rgb(0, 0, 0);
+  position: relative;
+  bottom: 5rem;
 }
 
 .reset-btn:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s ease-in-out
+  transform: scale(1.05);
+  transition: transform 0.5s ease-in-out;
 }
 
-/* New button */
 .new-btn {
-    padding: 1.5rem;
-    font-size: 1.2rem;
-    background: radial-gradient(circle, #6969b3, #4b244a);
-    color: #25171a;
-    font-weight: 700;
-    border-radius: 2rem;
-    border: 2px solid #98c1d9;
-    box-shadow: 0 0 1rem rgb(0,0,0);
-    text-shadow: 0 0 1rem rgb(0,0,0);
-    position: fixed;
-    top: 4rem;
-    left: 8rem;
-}
-
-.new-btn:active {
-    background-color: #181f1c;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 2rem;
+  border: 2px solid #98c1d9;
+  box-shadow: 0 0 1rem rgb(0, 0, 0);
+  position: relative;
 }
 
 .new-btn:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s ease-in-out
+  transform: scale(1.05);
+  transition: transform 0.5s ease-in-out;
 }
 
 /* Heading */
 h1 {
-    color: #25171a;
-    font-size: 4rem;
-    margin-top: 4rem;
-    text-shadow: 0 0 1rem rgb(0,0,0);
-    /* border: 2px solid black; */
-    height: 4rem;
-    line-height: 4rem;
+  font-size: 4rem;
+  margin-top: 4rem;
+  text-shadow: 0 0 1rem rgb(0, 0, 0);
+  height: 4rem;
+  line-height: 4rem;
 }
 
 /* Main game */
 .container {
-    height: 70vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    /* border: 2px solid black; */
+  height: 70vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .game {
-    height: 40vmin;
-    width: 40vmin;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5vmin;
-    position: relative;
-    bottom: 10%;
-    /* border: 2px solid black; */
+  height: 40vmin;
+  width: 40vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5vmin;
+  position: relative;
+  bottom: 10%;
 }
 
-.box{
-    height: 10vmin;
-    width: 10vmin;
-    border-radius: 1rem;
-    border: none;
-    box-shadow: 0 0 1rem rgb(0,0,0);
-    font-size: 5vmin;
-    color: #25171a;
-    background: radial-gradient(circle, #6969b3, #4b244a);
-    border: 2px solid #98c1d9;
-    animation-name: pop;
-    animation-duration: 0.3s;
-    animation-timing-function: ease-in;
+.box {
+  height: 10vmin;
+  width: 10vmin;
+  border-radius: 1rem;
+  border: 2px solid #98c1d9;
+  box-shadow: 0 0 1rem rgb(0, 0, 0);
+  font-size: 5vmin;
 }
 
 @keyframes pop {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Winner message */
 .msg {
-    color: #25171a;
-    font-size: 10vmin;
-    text-shadow: 0 0 1rem rgb(0,0,0);
+  font-size: 10vmin;
+  text-shadow: 0 0 1rem rgb(0, 0, 0);
 }
 
 .msg-container {
-    height: 100vmin;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 4rem;
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 /* Draw message */
 .msg-container-draw {
-    height: 80vmin;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 4rem;
+  height: 80vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 .draw-msg {
-    color: #25171a;
-    font-size: 10vmin;
-    text-shadow: 0 0 1rem rgb(0,0,0);
+  font-size: 10vmin;
+  text-shadow: 0 0 1rem rgb(0, 0, 0);
 }
 
 /* Players */
-.player-one, .player-two {
-    font-size: 2rem;
-    font-weight: 700;
-    /* border: 2px solid black; */
+.player-one,
+.player-two {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .player-one {
-    position: relative;
-    left: 10%;
-    bottom: 10%;
+  position: relative;
+  left: 10%;
+  bottom: 10%;
 }
 .player-two {
-    position: relative;
-    right: 10%;
-    bottom: 10%;
+  position: relative;
+  right: 10%;
+  bottom: 10%;
 }
 
 .turn {
-    color: #6969b3;
-    text-shadow: 0 0 1rem rgb(0,0,0);
+  text-shadow: 0 0 1rem rgb(0, 0, 0);
 }
 
-/* Classes applied through JavaScript */
-
-/* Class to hide elements during certain time */
+/* Utility classes */
 .hide {
-    display: none;
-}
-
-/* Change game button */
-.change-game-2{
-    width: 80vw; 
-}
-
-/* Dark mode Reset button */
-.reset-btn-2 {
-    position: relative;
-    bottom: 6.4rem;
-    left: 8rem;
-}
-
-/* Dark mode body */
-.body-dark {
-    background: radial-gradient(circle, #000, #707070);
-    
-}
-
-/* Dark mode layout */
-.darkLayout {
-    color: #19647e;
-}
-
-.darkLayout2 {
-    background: radial-gradient(circle, #00bfff, #bcc3ca);
-}
-
-.darkBox {
-    background: radial-gradient(circle, #00bfff, #bcc3ca);
-}
-
-.dark-turn {
-    color:#eef0f2;
+  display: none;
 }

@@ -11,11 +11,6 @@ body {
     text-align: center;
     font-family: poppins;
 }
-
-.body {
-    background: radial-gradient(circle, #98c1d9, #25171a);
-}
-
 /* Buttons deigning */
 
 /* Back button */
@@ -26,7 +21,6 @@ body {
     position: relative;
     bottom: 9rem;
     right: 35rem;
-    background: radial-gradient(circle, #6969b3, #4b244a);
     font-weight: 700;
     box-shadow: 0 0 1rem rgb(0,0,0);
     text-shadow: 0 0 1rem rgb(0,0,0);
@@ -37,115 +31,16 @@ body {
     width: 30px;
 }
 
-.back:active {
-    background: radial-gradient(circle, #4b244a, #6969b3);
-}
-
 .back:hover {
     transform: scale(1.05);
     transition: transform 0.5s ease-in-out
 }
 
-a {
-    color: #aeecef;
-    text-decoration: none;
-}
-
-/* Mode button */
-.mode1 {
-    position: fixed;
-    top: 4%;
-    right: 2%;
-    padding: 0.4rem;
-    border: none;
-    border-radius: 2rem;
-    background-color: #fff;
-    box-shadow: 0 0 1rem rgb(0,0,0);
-    display: flex;
-    cursor: pointer;
-}
-
-.mode1 img {
-    width: 25px;
-}
-
-.mode1:active {
-    background-color: #000;
-}
-
-.mode1:hover {
-    transform: scale(1.02);
-    transition: transform 0.5s ease-in-out
-}
-
-.mode2 {
-    position: fixed;
-    top: 4%;
-    right: 2%;
-    padding: 0.4rem;
-    border: none;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem rgb(0,0,0);
-    background-color: #000;
-    display: flex;
-    cursor: pointer;
-}
-
-.mode2 img {
-    width: 25px;
-}
-
-.mode2:active {
-    background-color: #fff;
-}
-
-.mode2:hover {
-    transform: scale(1.02);
-    transition: transform 0.5s ease-in-out
-}
-
-.toggle {
-    display: none;
-}
-
-/* Change game button */
-.change-game-container {
-    position: relative;
-    /* border: 2px solid black; */
-    bottom: 11rem;
-    right: 8rem;
-    display: inline-block;
-}
-
-.change-game {
-    padding: 1.5rem;
-    font-size: 1.2rem;
-    border-radius: 2rem;
-    border: 2px solid #98c1d9;
-    background: radial-gradient(circle, #6969b3, #4b244a);
-    font-weight: 700;
-    box-shadow: 0 0 1rem rgb(0,0,0);
-    text-shadow: 0 0 1rem rgb(0,0,0);
-}
-.change-link {
-    color: #25171a;
-}
-
-.change-game:active {
-    background: radial-gradient(circle, #4b244a, #6969b3);
-}
-
-.change-game:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s ease-in-out
-}
 
 /* Reset Button */
 .reset-btn {
     padding: 1.5rem;
     font-size: 1.2rem;
-    background: radial-gradient(circle, #6969b3, #4b244a);
-    color: #25171a;
     font-weight: 700;
     border-radius: 2rem;
     border: 2px solid #98c1d9;
@@ -158,9 +53,6 @@ a {
     /* border: 2px solid black; */
 }
 
-.reset-btn:active {
-    background: radial-gradient(circle, #4b244a, #6969b3);
-}
 
 .reset-btn:hover {
     transform: scale(1.05);
@@ -171,8 +63,6 @@ a {
 .new-btn {
     padding: 1.5rem;
     font-size: 1.2rem;
-    background: radial-gradient(circle, #6969b3, #4b244a);
-    color: #25171a;
     font-weight: 700;
     border-radius: 2rem;
     border: 2px solid #98c1d9;
@@ -180,12 +70,9 @@ a {
     text-shadow: 0 0 1rem rgb(0,0,0);
     position: relative;
     top: 4rem;
-    left: 8rem;
+    left: 0rem;
 }
 
-.new-btn:active {
-    background-color: #181f1c;
-}
 
 .new-btn:hover {
     transform: scale(1.1);
@@ -194,7 +81,6 @@ a {
 
 /* Heading */
 h1 {
-    color: #25171a;
     font-size: 4rem;
     margin-top: 4rem;
     text-shadow: 0 0 1rem rgb(0,0,0);
@@ -232,8 +118,6 @@ h1 {
     border: none;
     box-shadow: 0 0 1rem rgb(0,0,0);
     font-size: 5vmin;
-    color: #25171a;
-    background: radial-gradient(circle, #6969b3, #4b244a);
     border: 2px solid #98c1d9;
     animation-name: pop;
     animation-duration: 0.3s;
@@ -254,7 +138,6 @@ h1 {
 
 /* Winner message */
 .msg {
-    color: #25171a;
     font-size: 10vmin;
     text-shadow: 0 0 1rem rgb(0,0,0);
 }
@@ -279,7 +162,6 @@ h1 {
 }
 
 .draw-msg {
-    color: #25171a;
     font-size: 10vmin;
     text-shadow: 0 0 1rem rgb(0,0,0);
 }
@@ -303,7 +185,6 @@ h1 {
 }
 
 .turn {
-    color: #6969b3;
     text-shadow: 0 0 1rem rgb(0,0,0);
 }
 
@@ -312,38 +193,4 @@ h1 {
 /* Class to hide elements during certain time */
 .hide {
     display: none;
-}
-
-/* Change game button */
-.change-game-2{
-    width: 80vw; 
-}
-
-/* Dark mode Reset button */
-.reset-btn-2 {
-    position: relative;
-    bottom: 6.4rem;
-    left: 8rem;
-}
-
-/* Dark mode body */
-.body-dark {
-    background: radial-gradient(circle, #000, #707070)
-}
-
-/* Dark mode layout */
-.darkLayout {
-    color: #19647e;
-}
-
-.darkLayout2 {
-    background: radial-gradient(circle, #00bfff, #bcc3ca);
-}
-
-.darkBox {
-    background: radial-gradient(circle, #00bfff, #bcc3ca);
-}
-
-.dark-turn {
-    color:#eef0f2;
 }

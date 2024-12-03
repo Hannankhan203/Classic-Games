@@ -2,15 +2,17 @@
 
 /* Back button */
 .back {
-    right: 22rem;
+    right: 40%;
 }
 
 /* Players */
 .player-one {
+    font-size: 1.5rem;
     left: 5%;
 }
 .player-two {
     right: 5%;
+    font-size: 1.5rem;
 }
 
 h1 {
@@ -23,13 +25,24 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 10rem;
+    gap: 6rem;
+    /* border: 2px solid black; */
+}
+.game {
+    height: 40vmin;
+    width: 40vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1vmin;
+    position: relative;
+    bottom: 10%;
     /* border: 2px solid black; */
 }
 
 .msg {
-    color: #25171a;
-    font-size: 9vmin;
+    font-size: 6vmin;
     text-shadow: 0 0 1rem rgb(0,0,0);
 }
 

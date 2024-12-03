@@ -1,0 +1,97 @@
+body.light-mode {
+  background-color: #008080;
+  color: #ff7f50;
+  transition: 0.5s;
+}
+
+body.dark-mode {
+  background-color: #1e1e2f;
+  color: #00ffff;
+  transition: 0.5s;
+}
+
+label .check.light-mode {
+  background: #101010;
+  box-shadow: 0 0 0 4px #101010;
+  transition: 0.5s;
+}
+
+label .check.dark-mode {
+  background: #f4f4f4;
+  box-shadow: 0 0 0 4px #f4f4f4;
+  transition: 0.5s;
+}
+
+label .botn.light-mode::before {
+  background: #252525;
+  transition: 0.5s;
+  box-shadow: inset -5px -5px 15px rgba(0, 0, 0, 0.3);
+}
+
+label .botn.dark-mode::before {
+  background: #5f5f5f;
+  transition: 0.5s;
+  box-shadow: inset -5px -5px 15px rgb(255, 255, 255);
+}
+
+label .botn.light-mode::after {
+  background: #252525;
+  transition: 0.5s;
+  box-shadow: inset -5px -5px 15px rgba(0, 0, 0, 0.3);
+}
+
+label .botn.dark-mode::after {
+  background: #5f5f5f;
+  transition: 0.5s;
+  box-shadow: inset -5px -5px 15px rgb(255, 255, 255);
+}
+
+.box.light-mode {
+  background-color: #008080;
+  color: #ff7f50;
+  transition: 0.5s;
+}
+
+.box.dark-mode {
+  background-color: #1e1e2f;
+  color: #00ffff;
+  transition: 0.5s;
+}
+
+.turn {
+    color: #fff;
+}
+
+.reset-btn.light-mode {
+  background-color: #008080;
+  color: #ff7f50;
+  transition: 0.5s;
+}
+
+.reset-btn.dark-mode {
+  background-color: #1e1e2f;
+  color: #00ffff;
+  transition: 0.5s;
+}
+
+.back.light-mode {
+  background-color: #008080;
+  transition: 0.5s;
+}
+
+.back.dark-mode {
+  background-color: #1e1e2f;
+  transition: 0.5s;
+}
+
+.new-btn.light-mode {
+  background-color: #008080;
+  color: #ff7f50;
+  transition: 0.5s;
+}
+
+.new-btn.dark-mode {
+  background-color: #1e1e2f;
+  color: #00ffff;
+  transition: 0.5s;
+}

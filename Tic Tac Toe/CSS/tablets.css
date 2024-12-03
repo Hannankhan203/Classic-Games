@@ -1,7 +1,7 @@
 /* Back button */
 .back {
     padding: 0.8rem;
-    right: 18rem;
+    right: 40%;
 }
 
 .msg {
@@ -25,11 +25,6 @@
     width: 25px;
 }
 
-/* Change game button */
-.change-game {
-    padding: 1.3rem;
-    font-size: 1rem;
-}
 
 /* Reset Button */
 .reset-btn {
@@ -42,7 +37,7 @@
     padding: 1.3rem;
     font-size: 1rem;
     top: 4.3rem;
-    left: 8rem;
+    left: 0rem;
 }
 
 /* Heading */
@@ -57,7 +52,8 @@ h1 {
 
 /* Winner message */
 .msg {
-    font-size: 8vmin;
+  color: #00ffff;
+  font-size: 5vmin;
 }
 
 .draw-msg {
@@ -87,7 +83,7 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 8rem;
+    gap: 5rem;
     /* border: 2px solid black; */
 }
 

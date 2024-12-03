@@ -10,43 +10,11 @@
     bottom: 3rem;
     right: 80%;
     position: fixed;
-    bottom: 5.3rem;
+    bottom: 18%;
 }
 
 .back img {
     width: 15px;
-}
-
-/* Mode button */
-.mode1 {
-    right: 2%;
-    padding: 0.2rem;
-    border: 2px solid black;
-    border-radius: 2rem;
-    background-color: #fff;
-    box-shadow: 0 0 1rem rgb(0,0,0);
-    display: flex;
-    cursor: pointer;
-}
-
-.mode1 img {
-    width: 15px;
-}
-
-.mode2 {
-    padding: 0.2rem;
-    border: 2px solid black;
-}
-
-.mode2 img {
-    width: 15px;
-}
-
-.change-game {
-    padding: 0.8rem;
-    font-size: 0.5rem;
-    position: fixed;
-    top: 62.5%;
 }
 
 /* Reset Button */
@@ -61,7 +29,7 @@
     padding: 0.8rem;
     font-size: 0.5rem;
     top: 62.5%;
-    left: 60%;
+    left: 40%;
 }
 
 
@@ -126,3 +94,14 @@ h1 {
 .hide {
     display: none;
 }
+
+label {
+    /* border: 2px solid black; */
+    position: fixed;
+    top: 90%;
+    right: 15%;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+    margin: 20px 0;
+  }
