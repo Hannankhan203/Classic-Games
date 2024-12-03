@@ -10,69 +10,7 @@ body {
     font-family: poppins;
 }
 
-/* Body */
-.body {
-    background: radial-gradient(circle, #52b2cf, #d4afb9);
-}
-
 /* Buttons designing */
-
-/* Mode button */
-.mode1 {
-    position: fixed;
-    top: 4%;
-    right: 2%;
-    padding: 0.4rem;
-    border: 4px solid black;
-    border-radius: 2rem;
-    background-color: #fff;
-    box-shadow: 0 0 1rem rgb(0,0,0);
-    display: flex;
-    cursor: pointer;
-}
-
-.mode1 img {
-    width: 25px;
-}
-
-.mode1:active {
-    background-color: #000;
-}
-
-.mode1:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s ease-in-out
-}
-
-.mode2 {
-    position: fixed;
-    top: 4%;
-    right: 2%;
-    padding: 0.4rem;
-    border: 4px solid black;
-    border-radius: 2rem;
-    background-color: #000;
-    box-shadow: 0 0 1rem rgb(0,0,0);
-    display: flex;
-    cursor: pointer;
-}
-
-.mode2 img {
-    width: 25px;
-}
-
-.mode2:active {
-    background-color: #fff;
-}
-
-.mode2:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s ease-in-out
-}
-
-.toggle {
-    display: none;
-}
 
 /* Options */
 .options {
@@ -164,7 +102,6 @@ a {
 
 /* Heading */
 h1 {
-    color: #ffffff;
     height: 8rem;
     line-height: 8rem;
     text-align: center;
@@ -176,7 +113,6 @@ h1 {
 .info {
     text-align: center;
     font-size: 2rem;
-    color: #fff;
     /* text-decoration: underline; */
     text-shadow: 0 0 1rem rgb(0,0,0);
 }

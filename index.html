@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/fonts.css">
+    <!-- Color CSS -->
+     <link rel="stylesheet" href="CSS/colors.css">
     <link rel="stylesheet" href="CSS/style.css" />
     <link
       rel="stylesheet"
@@ -35,12 +37,11 @@
   </head>
   <body class="body">
     <!-- Toggle mode button -->
-    <button class="mode2" id="mode2" title="Light Mode">
-      <img src="Images/Light Mode Icon.png" alt="Light Mode Icon" />
-    </button>
-    <button class="mode1" id="mode1" title="Dark Mode">
-      <img src="Images/Dark Mode Icon.png" alt="Dark Mode Icon" />
-    </button>
+    <label for="">
+      <input type="checkbox" class="styled-checkbox"  id="theme-checkbox" />
+      <span class="check"></span>
+      <span class="botn"></span>
+    </label>
     <!-- Heading -->
     <h1>Games</h1>
     <p class="info">Enjoy classic games built on HTML, CSS, & JS</p>
