@@ -1,67 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangman</title>
-    <link rel="stylesheet" href="../CSS/fonts.css">
-    <link rel="stylesheet" href="CSS/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="../fontawesome-free-6.0.0-web/css/all.css" />
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../CSS/fonts.css" />
+    <!-- Color Css -->
+    <link rel="stylesheet" href="CSS/colors.css" />
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Large CSS -->
     <link
       rel="stylesheet"
       media="screen and (max-width:1400px)"
       href="CSS/large.css"
     />
+    <!-- Normal CSS -->
     <link
       rel="stylesheet"
       media="screen and (max-width:1200px)"
       href="CSS/normal.css"
     />
+    <!-- Laptop CSS -->
     <link
       rel="stylesheet"
       media="screen and (max-width:992px)"
       href="CSS/laptop.css"
     />
+    <!-- Tablet CSS -->
     <link
       rel="stylesheet"
       media="screen and (max-width:768px)"
       href="CSS/tablets.css"
     />
+    <!-- Mobile CSS -->
     <link
       rel="stylesheet"
       media="screen and (max-width:576px)"
       href="CSS/mobile.css"
     />
-</head>
-<body class="body">
-    <h1 id="hangman-title">Hangman</h1>
-    <div id="category-selection" class="category-selection">
-        <button class="category-btn cat-btn" onclick="startGame('fruits')">Fruits</button>
-        <button class="category-btn cat-btn" onclick="startGame('animals')">Animals</button>
-        <button class="category-btn cat-btn" onclick="startGame('countries')">Countries</button>
-    </div>
-    
-    <div id="game-container" class="hidden game-container">
-        <div id="guessed-container" class="guessed-container">
-        </div>
-        <div id="consequence-box" class="consequence-box">Attempts left: <span id="attempts-left" class="attempts-left"></span></div>
-        <div id="keyboard" class="keyboard phone-keyboard"></div>
-    </div>
-
-    <div id="end-message" class="hidden end-message"></div>
-    <button class="reset-btn">Reset Game</button>
-    <button class="mode2" id="mode2" title="Light Mode">
-        <img src="../Images/Light Mode Icon.png" alt="Light Mode Icon" />
-      </button>
-      <button class="mode1" id="mode1" title="Dark Mode">
-        <img src="../Images/Dark Mode Icon.png" alt="Dark Mode Icon" />
-      </button>    
-      <div class="back-container">
-        <button class="back">
-          <a class="back-link" href="../index.html"
-            ><img src="../Images/corner-up-left-fill.png" alt="Back button"
-          /></a>
+    <title>Hangman</title>
+  </head>
+  <body>
+    <!-- Toggle Mode -->
+    <label>
+      <input type="checkbox" id="theme-checkbox" />
+      <span class="check"></span>
+      <span class="botn"></span>
+    </label>
+    <h1 class="heading">Hangman</h1>
+    <!-- Main Game -->
+    <div class="main-game">
+      <div class="category-selection" id="category-selection">
+        <button class="category-btn" onclick="startGame('fruits')">
+          Fruits
         </button>
+        <button class="category-btn" onclick="startGame('animals')">
+          Animals
+        </button>
+        <button class="category-btn" onclick="startGame('countries')">
+          Countries
+        </button>
+      </div>
+      <div class="game-container hidden">
+        <div class="guess-box"></div>
+        <div class="consequence-box">
+          <div class="life1 life"></div>
+          <div class="life2 life"></div>
+          <div class="life3 life"></div>
+          <div class="life4 life"></div>
+          <div class="life5 life"></div>
+          <div class="life6 life"></div>
         </div>
+        <div class="keyboard"></div>
+      </div>
+      <div class="end-msg hidden"></div>
+      <button class="reset-btn">Reset Game</button>
+      <button class="back-btn">
+        <a href="../index.html" class="back-btn-link">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+      </button>
+    </div>
     <script src="JS/script.js"></script>
-</body>
+  </body>
 </html>

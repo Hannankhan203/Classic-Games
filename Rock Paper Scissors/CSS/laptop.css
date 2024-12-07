@@ -1,16 +1,45 @@
-/* Heading */
-h1 {
-    height: 7rem;
-    line-height: 7rem;
+label {
+  /* border: 2px solid black; */
+  top: 90%;
 }
 
-/* Score board */
+.heading {
+  font-size: 3rem;
+}
+
+/* Main Game */
+
+.choices {
+  /* border: 2px solid black; */
+  gap: 4rem;
+}
+
+.choice {
+  height: 120px;
+  width: 120px;
+  /* border: 2px solid black; */
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+/* Score Board */
+
 .score-board {
-    gap: 40rem;
-    top: 38%;
+  gap: 30rem;
+  font-size: 30px;
 }
 
-/* Message container */
 .msg-container {
-    top: 85%;
+  /* border: 2px solid black; */
+  position: fixed;
+  width: 100%;
+  top: 80%;
+  font-size: 1.5rem;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

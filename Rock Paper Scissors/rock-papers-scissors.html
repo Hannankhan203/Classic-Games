@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="../fontawesome-free-6.0.0-web/css/all.css" />
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../CSS/fonts.css" />
+    <!-- Color Css -->
+    <link rel="stylesheet" href="CSS/colors.css" />
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Large CSS -->
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:1400px)"
+      href="CSS/large.css"
+    />
+    <!-- Normal CSS -->
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:1200px)"
+      href="CSS/normal.css"
+    />
+    <!-- Laptop CSS -->
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:992px)"
+      href="CSS/laptop.css"
+    />
+    <!-- Tablet CSS -->
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768px)"
+      href="CSS/tablets.css"
+    />
+    <!-- Mobile CSS -->
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:576px)"
+      href="CSS/mobile.css"
+    />
+    <title>Rock Papers Scissors</title>
+  </head>
+  <body>
+    <!-- Toggle Mode -->
+    <label>
+      <input type="checkbox" id="theme-checkbox" />
+      <span class="check"></span>
+      <span class="botn"></span>
+    </label>
+    <h1 class="heading">Rock Papers Scissors</h1>
+    <!-- Main Game -->
+    <div class="choices">
+      <div class="layout">
+        <div class="choice" id="rock">
+          <img src="Images/rock.png" alt="Rock" />
+        </div>
+      </div>
+      <div class="layout">
+        <div class="choice" id="paper">
+          <img src="Images/paper.png" alt="Paper" />
+        </div>
+      </div>
+      <div class="layout">
+        <div class="choice" id="scissors">
+          <img src="Images/scissors.png" alt="Scissors" />
+        </div>
+      </div>
+    </div>
+    <!-- Score Board -->
+    <div class="score-board">
+      <div class="score">
+        <p id="user-score">0</p>
+        <p>You</p>
+      </div>
+      <div class="score">
+        <p id="comp-score">0</p>
+        <p>Comp</p>
+      </div>
+    </div>
+    <div class="msg-container">
+      <p id="msg">Play Your Move!</p>
+    </div>
+    <button class="back-btn">
+      <a href="../index.html" class="back-btn-link">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+    </button>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

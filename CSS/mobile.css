@@ -1,34 +1,22 @@
-/* Mode button */
+/* Toggle Checkbox */
+
 label {
-    /* border: 2px solid black; */
-    position: fixed;
-    top: 90%;
-    right: 10%;
-    width: 40px;
-    height: 20px;
-    cursor: pointer;
-    margin: 20px 0;
-  }
-
+  right: 12%;
+}
 /* Options */
-.options {
-    /* border: 2px solid black; */
-    height: 65vh;
-    width: 60%;
+
+.options-container {
+  top: 15%;
 }
 
-/* Game Button */
-.game img {
-    width: 70px;
+img {
+  width: 80px;
 }
 
-/* Heading */
-h1 {
-    height: 4rem;
-    line-height: 4rem;
-    font-size: 2rem;
+.heading {
+  font-size: 2rem;
 }
 
 .info {
-    font-size: 1rem;
+  font-size: 10px;
 }

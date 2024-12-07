@@ -1,61 +1,40 @@
-/* Buttons deigning */
-
-/* Back button */
-.back {
-    right: 40%;
+.main-container {
+  gap: 4rem;
 }
 
-/* Players */
-.player-one {
-    font-size: 1.5rem;
-    left: 5%;
-}
-.player-two {
-    right: 5%;
-    font-size: 1.5rem;
+.game-container {
+  /* border: 2px solid black; */
+  height: 60%;
+  width: 350px;
 }
 
-h1 {
-    height: 7rem;
-    line-height: 7rem;
+.box {
+  width: 80px;
+  height: 80px;
+  font-size: 50px;
 }
 
-.container {
-    height: 70vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 6rem;
-    /* border: 2px solid black; */
-}
-.game {
-    height: 40vmin;
-    width: 40vmin;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1vmin;
-    position: relative;
-    bottom: 10%;
-    /* border: 2px solid black; */
+.player-1,
+.player-2 {
+  font-size: 30px;
 }
 
-.msg {
-    font-size: 6vmin;
-    text-shadow: 0 0 1rem rgb(0,0,0);
+.reset-btn {
+  left: 40%;
 }
 
 .msg-container {
-    height: 100vmin;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 4.5rem;
-    /* border: 2px solid black; */
+  left: 15%;
 }
 
-.hide {
-    display: none;
+.draw-msg {
+  left: 13%;
+}
+
+/* javaScript Classes */
+
+.draw-reset-btn {
+  position: fixed;
+  top: 60%;
+  left: 40%;
 }

@@ -1,216 +1,192 @@
-const categoryBtns = document.querySelectorAll(".category-btn");
-const resetBtn = document.querySelector(".reset-btn");
-const h1 = document.querySelector("h1");
-const consequenceBox = document.querySelector(".consequence-box");
-const keyboardKeys = document.querySelector(".keyboard");
-const endMsg = document.querySelector(".end-message");
+// Calling HTML Elements
+
 const body = document.querySelector("body");
-let modeBtn1 = document.querySelector("#mode1");
-let modeBtn2 = document.querySelector("#mode2");
-const back = document.querySelector(".back");
-const backLink = document.querySelector(".back-link");
-const guessedContainer = document.querySelector(".guessed-container");
-const categorySelection = document.querySelector(".category-selection");
+const themeCheckbox = document.querySelector("#theme-checkbox");
+const check = document.querySelector(".check");
+const botn = document.querySelector(".botn");
+const categoryBtns = document.querySelectorAll(".category-btn");
 const gameContainer = document.querySelector(".game-container");
-const remainingAttempts = document.querySelector(".attempts-left");
-const catBtns = document.querySelectorAll(".cat-btn");
-modeBtn2.classList.add("toggle");
+const guessBox = document.querySelector(".guess-box");
+const consequenceBox = document.querySelector(".consequence-box");
+const lives = document.querySelectorAll(".life");
+const life1 = document.querySelector(".life1");
+const life2 = document.querySelector(".life2");
+const life3 = document.querySelector(".life3");
+const life4 = document.querySelector(".life4");
+const life5 = document.querySelector(".life5");
+const life6 = document.querySelector(".life6");
+const keyboard = document.querySelector(".keyboard");
+const endMsg = document.querySelector(".end-msg");
+const resetBtn = document.querySelector(".reset-btn");
+const backBtn = document.querySelector(".back-btn");
+const backBtnLink = document.querySelector(".back-btn-link");
 
+// Default Mode
 
-let mode = "Light mode";
+body.classList.add("light-mode");
+check.classList.add("light-mode");
+botn.classList.add("light-mode");
+categoryBtns.forEach((categoryBtn) => {
+  categoryBtn.classList.add("light-mode");
+});
+guessBox.classList.add("light-mode");
+consequenceBox.classList.add("light-mode");
+keyboard.classList.add("light-mode");
+resetBtn.classList.add("light-mode");
+backBtn.classList.add("light-mode");
+backBtnLink.classList.add("light-mode");
 
-const darkMode = () => {
-    modeBtn1.classList.add("toggle");
-    modeBtn2.classList.remove("toggle");
-    resetBtn.classList.add("dark-layout", "dark-layout-2");
-    body.classList.add("body-dark");
-    h1.classList.add("dark-layout");
-    back.classList.add("dark-layout-2");
-    backLink.classList.add("dark-layout");
-    consequenceBox.classList.add("dark-border", "dark-layout");
-    catBtns.forEach((catBtn) => {
-        catBtn.classList.add("dark-layout", "dark-layout-2");
-    });
-    guessedContainer.classList.add("dark-layout", "dark-layout-2");
-    endMsg.classList.add("dark-layout", "dark-layout-2");
-    keyboardKeys.querySelectorAll(".key").forEach((key) => {
-        key.classList.add("dark-layout", "dark-layout-2");
-    });
+// Toggle Mode
+
+function toggleMode() {
+  body.classList.toggle("dark-mode");
+  check.classList.toggle("dark-mode");
+  botn.classList.toggle("dark-mode");
+  categoryBtns.forEach((categoryBtn) => {
+    categoryBtn.classList.toggle("dark-mode");
+  });
+  guessBox.classList.toggle("dark-mode");
+  consequenceBox.classList.toggle("dark-mode");
+  keyboard.classList.toggle("dark-mode");
+  resetBtn.classList.toggle("dark-mode");
+  backBtn.classList.toggle("dark-mode");
+  backBtnLink.classList.toggle("dark-mode");
+  keyboard.querySelectorAll(".key").forEach((key) => {
+    key.classList.toggle("dark-mode");
+  });
 }
 
-const lightMode = () => {
-    modeBtn2.classList.add("toggle");
-    modeBtn1.classList.remove("toggle");
-    resetBtn.classList.remove("dark-layout", "dark-layout-2");
-    body.classList.remove("body-dark");
-    h1.classList.remove("dark-layout");
-    back.classList.remove("dark-layout-2");
-    backLink.classList.remove("dark-layout");
-    consequenceBox.classList.remove("dark-border", "dark-layout");
-    catBtns.forEach((catBtn) => {
-        catBtn.classList.remove("dark-layout", "dark-layout-2");
-    });
-    guessedContainer.classList.remove("dark-layout", "dark-layout-2");
-    endMsg.classList.remove("dark-layout", "dark-layout-2");
-    keyboardKeys.querySelectorAll(".key").forEach((key) => {
-        key.classList.remove("dark-layout", "dark-layout-2");
-    });
-}
+themeCheckbox.addEventListener("click", toggleMode);
 
+const fruits = ["apple", "banana", "grape", "mango", "orange"];
+const animals = ["elephant", "tiger", "lion", "giraffe", "monkey"];
+const countries = ["brazil", "france", "germany", "canada", "japan"];
 
-const toggleMode = () => {
-    if (mode === "Light mode") {
-        mode = "Dark mode";
-        darkMode();
-    } else {
-        mode = "Light mode";
-        lightMode();
-    }
-}
-
-modeBtn1.addEventListener("click", toggleMode);
-modeBtn2.addEventListener("click", toggleMode);
-
-const fruits = ['apple', 'banana', 'grape', 'mango', 'orange'];
-const animals = ['elephant', 'tiger', 'lion', 'giraffe', 'monkey'];
-const countries = ['brazil', 'france', 'germany', 'canada', 'japan'];
-
-
-consequenceBox.classList.add("hidden");
-guessedContainer.classList.add("hidden");
-endMsg.classList.add("hidden");
-
-let chosenWord = '';
-let guessedWord = [];
+let chosenWord = "";
+let guessWord = [];
 let attemptsLeft = 6;
-guessedContainer.innerText = "_ _ _ _ _ _ _ _";
+guessBox.innerText = `_ `;
 
 function startGame(category) {
-    let wordArray = [];
-    if (category === 'fruits') {
-        wordArray = fruits;
-    } else if (category === 'animals') {
-        wordArray = animals;
-    } else if (category === 'countries') {
-        wordArray = countries;
-    }
+  let wordArray = [];
+  if (category === "fruits") {
+    wordArray = fruits;
+  } else if (category === "animals") {
+    wordArray = animals;
+  } else if (category === "countries") {
+    wordArray = countries;
+  }
+  guessBox.textContent = `_ `.repeat(chosenWord.length).trim();
+  chosenWord =
+    wordArray[Math.floor(Math.random() * wordArray.length)].toUpperCase();
+  guessWord = Array(chosenWord.length).fill("_");
+  attemptsLeft = 6;
+  categoryBtns.forEach((categoryBtn) => {
+    categoryBtn.classList.add("hidden");
+  });
+  guessBox.textContent = guessWord.join(" ");
+  gameContainer.classList.remove("hidden");
+  createKeyboard();
 
-    guessedContainer.innerText = "_ _ _ _ _ _ _ _";
-
-
-    chosenWord = wordArray[Math.floor(Math.random() * wordArray.length)].toUpperCase();
-    guessedWord = Array(chosenWord.length).fill('_');
-    attemptsLeft = 6;
-
-    categorySelection.classList.add('hidden');
-    gameContainer.classList.remove('hidden');
-    remainingAttempts.textContent = attemptsLeft;
-    document.getElementsByClassName('guessed-letter').textContent = guessedWord.join(' ');
-    consequenceBox.classList.remove("hidden");
-    guessedContainer.classList.remove("hidden");
-    endMsg.classList.add("hidden");
-
-    disableOptionButtons();
-    createKeyboard();
+  lives.forEach((life) => {
+    life.classList.remove("lost-life");
+  });
 }
 
 function createKeyboard() {
-    const keyboard = document.getElementById('keyboard');
-    keyboard.innerHTML = '';
-    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-    
-    letters.forEach(letter => {
-        const buttonKeys = document.createElement('button');
-        buttonKeys.textContent = letter;
-        buttonKeys.classList.add('key');
-        buttonKeys.onclick = () => handleGuess(letter, buttonKeys);
-        keyboard.appendChild(buttonKeys);
-    });
-    if (mode === "Dark mode") {
-        keyboardKeys.querySelectorAll(".key").forEach((key) => {
-            key.classList.add("dark-layout", "dark-layout-2");
-        });
-    } else {
-        keyboardKeys.querySelectorAll(".key").forEach((key) => {
-            key.classList.remove("dark-layout", "dark-layout-2");
-        });
-    }
-    endMsg.classList.add('hidden');
+  keyboard.innerHTML = "";
+  const isDarkMode = body.classList.contains("dark-mode");
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").forEach((letter) => {
+    const button = document.createElement("button");
+    button.textContent = letter;
+    button.classList.add("key");
+    button.classList.add(isDarkMode ? "dark-mode" : "light-mode");
+    button.onclick = () => handleGuess(letter, button);
+    keyboard.appendChild(button);
+  });
+  keyboard.querySelectorAll(".key").forEach((key) => {
+    key.classList.add("light-mode");
+  });
 }
 
 function handleGuess(letter, buttonKeys) {
-    buttonKeys.disabled = true;
-    buttonKeys.classList.add('disabled');
-    buttonKeys.style.transform = "none";
-    buttonKeys.style.cursor = "not-allowed";
-
-    
-    if (chosenWord.includes(letter)) {
-        for (let i = 0; i < chosenWord.length; i++) {
-            if (chosenWord[i] === letter) {
-                guessedWord[i] = letter;
-            }
-        }
-        document.getElementById('guessed-container').textContent = guessedWord.join(' ');
-        checkWin();
-    } else {
-        attemptsLeft--;
-        document.getElementById('attempts-left').textContent = attemptsLeft;
-        checkLose();
+  buttonKeys.disabled = true;
+  buttonKeys.style.transform = "none";
+  buttonKeys.style.cursor = "not-allowed";
+  if (chosenWord.includes(letter)) {
+    for (let i = 0; i < chosenWord.length; i++) {
+      if (chosenWord[i] === letter) {
+        guessWord[i] = letter;
+      }
     }
+    guessBox.textContent = guessWord.join(" ");
+    checkWin();
+  } else {
+    attemptsLeft--;
+    if (attemptsLeft === 5) {
+      life6.classList.add("lost-life");
+    } else if (attemptsLeft === 4) {
+      life5.classList.add("lost-life");
+    } else if (attemptsLeft === 3) {
+      life4.classList.add("lost-life");
+    } else if (attemptsLeft === 2) {
+      life3.classList.add("lost-life");
+    } else if (attemptsLeft === 1) {
+      life2.classList.add("lost-life");
+    } else if (attemptsLeft === 0) {
+      life1.classList.add("lost-life");
+    }
+    checkLose();
+  }
 }
 
 function checkWin() {
-    if (!guessedWord.includes('_')) {
-        endGame(true);
-    }
+  if (!guessWord.includes("_")) {
+    endGame(true);
+  }
 }
 
 function checkLose() {
-    if (attemptsLeft === 0) {
-        endGame(false);
-    }
+  if (attemptsLeft === 0) {
+    endGame(false);
+  }
 }
 
 function endGame(won) {
-    document.getElementById('game-container').classList.add('hidden');
-    endMsg.classList.remove("hidden");
-    
-    if (won) {
-        endMsg.textContent = `Congratulations! Your guess was right! The word was "${chosenWord}"! Play again.`;
-    } else {
-        endMsg.textContent = `You guessed the wrong word! The correct word was "${chosenWord}". Try again.`;
-    }
+  gameContainer.classList.add("hidden");
+  endMsg.classList.remove("hidden");
+  if (won) {
+    endMsg.textContent = `Congratulations! Your guess was right! The word was "${chosenWord}"! Play again.`;
+  } else {
+    endMsg.textContent = `You guessed the wrong word! The correct word was "${chosenWord}". Try again.`;
+  }
 }
 
 function resetGame() {
-    document.getElementById('category-selection').classList.remove('hidden');
-    document.getElementById('game-container').classList.add('hidden');
-    document.getElementById('end-message').classList.add('hidden');
-    enableOptionButtons();
-    consequenceBox.classList.add("hidden");
-    guessedContainer.classList.add("hidden");
-    endMsg.classList.add('hidden');
-    buttonKeys.style.transform = "";
-    buttonKeys.style.cursor = "none";
+  categoryBtns.forEach((categoryBtn) => {
+    categoryBtn.classList.remove("hidden");
+  });
+  gameContainer.classList.add("hidden");
+  endMsg.classList.add("hidden");
+  enableOptionsButton();
+  keyboard.innerHTML = "";
+  guessBox.textContent = "";
 }
 
 resetBtn.addEventListener("click", resetGame);
 
-function disableOptionButtons() {
-    const buttons = document.querySelectorAll('.category-btn');
-    buttons.forEach(button => {
-        button.disabled = true;
-        button.classList.add('disabled');
-        button.style.transform = "none";
-    });
+function disableOptionsBtn() {
+  categoryBtns.forEach((categoryBtn) => {
+    categoryBtn.disabled = true;
+    buttonKeys.style.transform = "none";
+    buttonKeys.style.cursor = "not-allowed";
+  });
 }
 
-function enableOptionButtons() {
-    const buttons = document.querySelectorAll('.category-btn');
-    buttons.forEach(button => {
-        button.disabled = false;
-        button.classList.remove('disabled');
-        button.style.transform = "";
-    });
+function enableOptionsButton() {
+  categoryBtns.forEach((categoryBtn) => {
+    categoryBtn.disabled = false;
+    buttonKeys.style.transform = "";
+    buttonKeys.style.cursor = "pointer";
+  });
 }

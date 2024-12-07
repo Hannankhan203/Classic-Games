@@ -1,1 +1,1 @@
-# Games Made on HTML CSS & JS
+# Classic Games

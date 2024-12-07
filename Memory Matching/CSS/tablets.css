@@ -1,0 +1,32 @@
+.heading {
+  font-size: 3rem;
+}
+
+/* Toggle Mode */
+
+label {
+  /* border: 2px solid black; */
+  top: 90%;
+  right: 10%;
+}
+
+/* Main Game */
+
+.info {
+  gap: 5rem;
+}
+
+.game-container {
+  width: 80%;
+}
+
+.card {
+  width: 90px;
+  height: 90px;
+  perspective: 1000px;
+}
+
+.winning-msg {
+  padding: 30px;
+  font-size: 20px;
+}

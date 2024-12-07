@@ -1,107 +1,71 @@
-/* Back button */
-.back-container {
-    display: flex;
-    /* border: 2px solid black; */
-    justify-content: center;
-    align-items: center;
-}
-.back {
-    padding: 0.3rem;
-    bottom: 3rem;
-    right: 80%;
-    position: fixed;
-    bottom: 18%;
+label {
+    top: 80%;
+    right: 15%;
+  }
+
+.main-container {
+  gap: 1rem;
 }
 
-.back img {
-    width: 15px;
+.game-container {
+  /* border: 2px solid black; */
+  height: 30%;
+  width: 150px;
 }
 
-/* Reset Button */
-.reset-btn {
-    padding: 0.8rem;
-    font-size: 0.5rem;
+.box {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 20px;
 }
 
-/* New button */
+.heading {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+.player-1,
+.player-2 {
+  font-size: 10px;
+}
+
 .new-btn {
-    position: fixed;
-    padding: 0.8rem;
-    font-size: 0.5rem;
-    top: 62.5%;
-    left: 40%;
+  font-size: 10px;
 }
 
-
-/* Heading */
-h1 {
-    font-size: 2rem;
-    margin-top: 2rem;
+.reset-btn {
+  font-size: 10px;
+  left: 35%;
 }
 
-/* Winner message */
-.msg {
-    font-size: 6vmin;
-    position: fixed;
-    top: 40%;
-    left: 10%;
+.back-btn {
+  font-size: 10px;
 }
 
 .msg-container {
-    gap: 2.5rem;
+  top: 40%;
+  left: 2%;
+  width: 100%;
+  /* border: 2px solid black; */
 }
 
-/* Draw message */
+
+.msg {
+  font-size: 20px;
+}
+
 .draw-msg {
-    font-size: 6vmin;
-    position: fixed;
-    top: 40%;
+  border: 2px solid black;
+  left: 5%;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
 }
 
-/* Players */
-.player-one, .player-two {
-    font-size: 0.8rem;
-}
+/* javaScript Classes */
 
-.player-one {
-    left: 0%;
+.draw-reset-btn {
+  left: 37%;
+  font-size: 10px;
 }
-.player-two {
-    right: 0%;
-}
-
-.reset-btn-2 {
-    position: fixed;
-    bottom: 30.5%;
-    left: 60%;
-}
-
-.change-game-2{
-    position: fixed;
-    top: 1%;
-    right: 40%;
-}
-
-.container {
-    height: 70vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 0rem;
-    /* border: 2px solid black; */
-}
-
-.hide {
-    display: none;
-}
-
-label {
-    /* border: 2px solid black; */
-    position: fixed;
-    top: 90%;
-    right: 15%;
-    width: 40px;
-    height: 20px;
-    cursor: pointer;
-    margin: 20px 0;
-  }

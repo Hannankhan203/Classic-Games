@@ -1,10 +1,12 @@
-.body.light-mode {
+/* Universal Colors */
+
+body.light-mode {
   background-color: #007bff;
   color: #fff;
   transition: 0.5s;
 }
 
-.body.dark-mode {
+body.dark-mode {
   background-color: #1e1e2f;
   color: #00ffff;
   transition: 0.5s;

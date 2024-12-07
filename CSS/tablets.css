@@ -1,23 +1,24 @@
+/* Toggle Checkbox */
+
+label {
+  top: 90%;
+  right: 8%;
+}
+
 /* Options */
-.options {
-    /* border: 2px solid black; */
-    height: 70vh;
-    width: 40%;
+
+.options-container {
+  top: 10%; 
 }
 
-/* Game Button */
-.game img {
-    width: 100px;
+img {
+  width: 120px;
 }
 
-/* Heading */
-h1 {
-    height: 6rem;
-    line-height: 6rem;
-    font-size: 3rem;
-    /* border: 2px solid black; */
+.heading {
+  font-size: 3rem;
 }
 
 .info {
-    font-size: 1.5rem;
+  font-size: 15px;
 }

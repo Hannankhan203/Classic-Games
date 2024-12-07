@@ -1,267 +1,49 @@
-/* Universal selector to set everything to 0 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-align: center;
+label {
+  /* border: 2px solid black; */
+  top: 90%;
+  right: 15%;
 }
 
-/* Body */
-body {
-    text-align: center;
-    font-family: poppins;
+.heading {
+  margin-top: 20px;
+  font-size: 2rem;
 }
 
-.body {
-    background: radial-gradient(circle, #98c1d9, #25171a);
-}
+/* Main Game */
 
-/* Buttons designing */
-
-/* Mode button */
-.mode1 {
-    position: fixed;
-    top: 4%;
-    right: 2%;
-    padding: 0.2rem;
-    border: 2px solid black;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem rgb(0,0,0);
-    background-color: #fff;
-    display: flex;
-    cursor: pointer;
-}
-
-.mode1 img {
-    width: 15px;
-    height: 15px;
-}
-
-.mode1:active {
-    background-color: #000;
-}
-
-.mode1:hover {
-    transform: scale(1.02);
-    transition: transform 0.5s ease-in-out
-}
-
-.mode2 {
-    position: fixed;
-    top: 4%;
-    right: 2%;
-    padding: 0.2rem;
-    border: 2px solid black;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem rgb(0,0,0);
-    display: flex;
-    background-color: #000;
-    cursor: pointer;
-}
-
-.mode2 img {
-    width: 15px;
-    height: 15px;
-}
-
-.mode2:active {
-    background-color: #fff;
-}
-
-.mode2:hover {
-    transform: scale(1.02);
-    transition: transform 0.5s ease-in-out
-}
-
-.toggle {
-    display: none;
-}
-
-/* Back button */
-.back {
-    padding: 0.3rem;
-    border-radius: 2rem;
-    border: 2px solid #98c1d9;
-    position: fixed;
-    bottom: 2rem;
-    left: 5%;
-    background: radial-gradient(circle, #6969b3, #4b244a);
-    font-weight: 700;
-    box-shadow: 0 0 1rem rgb(0,0,0);
-    text-shadow: 0 0 1rem rgb(0,0,0);
-    /* border: 2px solid black; */
-}
-
-.back img {
-    width: 15px;
-    height: 15px;
-}
-
-.back:active {
-    background: radial-gradient(circle, #4b244a, #6969b3);
-}
-
-.back:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s ease-in-out
-}
-
-
-/* Heading */
-h1 {
-    color: #25171a;
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    text-shadow: 0 0 1rem rgb(0,0,0);
-    /* border: 2px solid black; */
-    height: 4rem;
-    line-height: 4rem;
-}
-
-/* Main game */
 .choices {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0rem;
-    /* border: 2px solid black; */
-    width: 100vw;
-    position: relative;
-    top: 2rem;
+  /* border: 2px solid black; */
+  gap: 2rem;
 }
 
 .choice {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 1rem rgb(0, 0, 0);
-    animation-name: bounce;
-    animation-duration: 0.3s;
-    animation-timing-function: ease-in-out
-}
-
-@keyframes bounce {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.choice:hover {
-    cursor: pointer;
-    background: radial-gradient(circle, #6969b3, #4b244a);
-}
-
-.layout {
-    display: flex;
-    flex-direction: column;
-    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-}
-
-.symbol {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-#rock-symbol {
-    color: rgb(219, 117, 134);
-}
-
-#paper-symbol {
-    color: rgb(187, 83, 187);
-}
-
-#scissors-symbol {
-    color: rgb(96, 107, 225);
+  height: 60px;
+  width: 60px;
+  /* border: 2px solid black; */
 }
 
 img {
-    height: 30px;
-    width: 30px;
-    object-fit: cover;
-    border-radius: 50%;
+  height: 40px;
+  width: 40px;
 }
 
-/* Score board */
+/* Score Board */
+
 .score-board {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    margin-top:3rem;
-    gap: 10rem;
-    position: fixed;
-    top: 50%;
-    width: 100vw;
-    /* border: 2px solid black; */
-    color: #25171a;
-    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-    z-index: -1;
+  gap: 5rem;
+  font-size: 20px;
 }
 
-#user-score, #comp-score {
-    font-size: 3rem;
-}
-
-/* Message container */
 .msg-container {
-    /* margin-top: 5rem; */
-    /* border: 2px solid black; */
-    position: fixed;
-    top: 80%;
-    width: 100vw;
-    z-index: -1;
+  /* border: 2px solid black; */
+  font-size: 0.8rem;
 }
 
-.msg {
-    background: radial-gradient(circle, #6969b3, #4b244a);
-    color: #ffffff;
-    font-size: 0.8rem;
-    display: inline;
-    padding: 0.5rem;
-    border-radius: 2rem;
-    font-weight: 600;
-    box-shadow: 0 0 1rem rgb(0, 0, 0);
-    text-shadow: 0 0 1rem rgb(0, 0, 0);
+#msg {
+  /* border: 2px solid black; */
+  width: 50%;
 }
 
-/* Classes applied using JavaScript */
-
-/* Dark mode body */
-.body-dark {
-    background: radial-gradient(circle, #000, #707070);
-}
-
-.darkBg {
-    color: #19647e;
-}
-
-/* Dark mode score board */
-.darkScore {
-    color: #19647e;
-}
-
-.right {
-    background: radial-gradient(circle, white, green, black);
-}
-
-.wrong {
-    background: radial-gradient(circle, white, red, black);
-}
-
-.draw {
-    background: radial-gradient(circle, #6969b3, #4b244a);
-}
-
-.dark-btn {
-    background: radial-gradient(circle, #00bfff, #bcc3ca);
+.back-btn {
+    font-size: 10px;
 }

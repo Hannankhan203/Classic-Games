@@ -3,29 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="../fontawesome-free-6.0.0-web/css/all.css" />
+    <!-- Fonts -->
     <link rel="stylesheet" href="../CSS/fonts.css" />
-    <link rel="stylesheet" href="CSS/colors.css">
+    <!-- Color Css -->
+    <link rel="stylesheet" href="CSS/colors.css" />
+    <!-- Internal CSS -->
     <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Large CSS -->
     <link
       rel="stylesheet"
       media="screen and (max-width:1400px)"
       href="CSS/large.css"
     />
+    <!-- Normal CSS -->
     <link
       rel="stylesheet"
       media="screen and (max-width:1200px)"
       href="CSS/normal.css"
     />
+    <!-- Laptop CSS -->
     <link
       rel="stylesheet"
       media="screen and (max-width:992px)"
       href="CSS/laptop.css"
     />
+    <!-- Tablet CSS -->
     <link
       rel="stylesheet"
       media="screen and (max-width:768px)"
       href="CSS/tablets.css"
     />
+    <!-- Mobile CSS -->
     <link
       rel="stylesheet"
       media="screen and (max-width:576px)"
@@ -33,54 +43,42 @@
     />
     <title>Tic Tac Toe</title>
   </head>
-  <body class="body">
-    <!-- Toggle Mode button -->
+  <body>
+    <!-- Toggle Mode -->
     <label>
       <input type="checkbox" id="theme-checkbox" />
       <span class="check"></span>
       <span class="botn"></span>
     </label>
-
-    <!-- Message containers -->
-    <div class="msg-container hide">
-      <p id="msg" class="msg">Winner!</p>
-      <button id="new-btn" class="new-btn">New Game!</button>
+    <!-- Winning Message -->
+    <div class="msg-container hidden">
+      <div class="msg">Winner</div>
+      <button class="new-btn">New Game</button>
     </div>
-
-    <main>
-      <h1>Tic Tac Toe</h1>
-      <div class="container">
-        <p class="player-one">Player 1 (O)</p>
-        <div class="game">
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-        </div>
-        <p class="player-two turn">Player 2 (X)</p>
+    <h1 class="heading">Tic Tac Toe</h1>
+    <!-- Main Game -->
+    <div class="main-container">
+      <p class="player-1">Player 1</p>
+      <div class="game-container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
       </div>
-
-      <div class="msg-container-draw hide">
-        <p id="draw-msg" class="draw-msg">Game Draw!</p>
-      </div>
-
-      <button id="reset-btn" class="reset-btn">Reset Game!</button>
-    </main>
-
-    <!-- Navigation buttons -->
-    <div class="back-container">
-      <button class="back">
-        <a class="back-link" href="../index.html">
-          <img src="../Images/corner-up-left-fill.png" alt="Back" />
-        </a>
-      </button>
+      <p class="player-2">Player 2</p>
     </div>
-
+    <div class="draw-msg hidden">Game Was Draw. Play Again!</div>
+    <button class="back-btn">
+      <a href="../index.html" class="back-btn-link">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+    </button>
+    <button class="reset-btn">Reset Game</button>
     <script src="JS/script.js"></script>
   </body>
 </html>

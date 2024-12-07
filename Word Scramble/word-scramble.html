@@ -1,58 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/fonts.css">
-    <link rel="stylesheet" href="CSS/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="../fontawesome-free-6.0.0-web/css/all.css" />
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../CSS/fonts.css" />
+    <!-- Color Css -->
+    <link rel="stylesheet" href="CSS/colors.css" />
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Large CSS -->
     <link
       rel="stylesheet"
       media="screen and (max-width:1400px)"
       href="CSS/large.css"
     />
+    <!-- Normal CSS -->
     <link
       rel="stylesheet"
       media="screen and (max-width:1200px)"
       href="CSS/normal.css"
     />
+    <!-- Laptop CSS -->
     <link
       rel="stylesheet"
       media="screen and (max-width:992px)"
       href="CSS/laptop.css"
     />
+    <!-- Tablet CSS -->
     <link
       rel="stylesheet"
       media="screen and (max-width:768px)"
       href="CSS/tablets.css"
     />
+    <!-- Mobile CSS -->
     <link
       rel="stylesheet"
       media="screen and (max-width:576px)"
       href="CSS/mobile.css"
     />
     <title>Word Scramble</title>
-</head>
-<body class="body">
-    <h1>Word Scramble</h1>
-    <div class="container">
-        <p class="scrambled-word" id="scrambled-word"></p>
-        <input type="text" id="user-input" class="user-input" placeholder="Enter the correct word here">
-        <button class="submit-btn" id="submit-btn">Submit</button>
-        <p class="result" id="result"></p>
-        <button class="new-game" id="new-game">New Game</button>
+  </head>
+  <body>
+    <!-- Toggle Mode -->
+    <label>
+      <input type="checkbox" id="theme-checkbox" />
+      <span class="check"></span>
+      <span class="botn"></span>
+    </label>
+    <h1 class="heading">Word Scramble</h1>
+    <!-- Main Game -->
+    <div class="main-game">
+      <p class="scrambled-word" id="scrambled-word"></p>
+      <input
+        type="text"
+        id="user-input"
+        class="user-input"
+        placeholder="Enter The Correct Word Here"
+      />
+      <button class="submit-btn" id="submit-btn">Submit</button>
+      <p class="result" id="result"></p>
+      <button class="new-btn" id="new-btn">New Game</button>
     </div>
-    <button class="mode2" id="mode2" title="Light Mode">
-        <img src="../Images/Light Mode Icon.png" alt="Light Mode Icon" />
-      </button>
-      <button class="mode1" id="mode1" title="Dark Mode">
-        <img src="../Images/Dark Mode Icon.png" alt="Dark Mode Icon" />
-        <div class="back-container">
-            <button class="back">
-              <a class="back-link" href="../index.html"
-                ><img src="../Images/corner-up-left-fill.png" alt="Back button"
-              /></a>
-            </button>
-            </div>
+    <button class="back-btn">
+      <a href="../index.html" class="back-btn-link">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+    </button>
     <script src="JS/script.js"></script>
-</body>
+  </body>
 </html>

@@ -1,0 +1,16 @@
+.heading {
+  font-size: 4rem;
+}
+
+/* Main Game */
+
+.game-container {
+  width: 100%;
+  /* border: 2px solid black; */
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  perspective: 1000px;
+}

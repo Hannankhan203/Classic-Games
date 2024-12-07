@@ -1,19 +1,7 @@
-/* Options */
-.options {
-    /* border: 2px solid black; */
-    height: 80vh;
-    gap: 2rem;
-    width: 60%;
+.heading {
+  font-size: 4rem;
 }
 
-/* Game Button */
-.game img {
-    width: 130px;
-}
-
-
-/* Heading */
-h1 {
-    height: 7rem;
-    line-height: 7rem;
+.info {
+  font-size: 20px;
 }

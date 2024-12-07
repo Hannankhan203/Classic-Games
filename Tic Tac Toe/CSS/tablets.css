@@ -1,92 +1,51 @@
-/* Back button */
-.back {
-    padding: 0.8rem;
-    right: 40%;
+.main-container {
+  gap: 2rem;
 }
 
-.msg {
-    color: #25171a;
-    font-size: 5vmin;
-    text-shadow: 0 0 1rem rgb(0,0,0);
+.game-container {
+  /* border: 2px solid black; */
+  height: 50%;
+  width: 250px;
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  font-size: 40px;
+}
+
+.heading {
+  font-size: 3rem;
+}
+
+.player-1,
+.player-2 {
+  font-size: 20px;
+}
+
+.reset-btn {
+  left: 40%;
 }
 
 .msg-container {
-    height: 100vmin;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 0rem;
-    /* border: 2px solid black; */
+  left: 25%;
 }
 
 
-.back img {
-    width: 25px;
-}
-
-
-/* Reset Button */
-.reset-btn {
-    padding: 1.3rem;
-    font-size: 1rem;
-}
-
-/* New button */
-.new-btn {
-    padding: 1.3rem;
-    font-size: 1rem;
-    top: 4.3rem;
-    left: 0rem;
-}
-
-/* Heading */
-h1 {
-    height: 6rem;
-    line-height: 6rem;
-    font-size: 3rem;
-    margin-top: 3rem;
-    /* border: 2px solid black; */
-}
-
-
-/* Winner message */
 .msg {
-  color: #00ffff;
-  font-size: 5vmin;
+  font-size: 20px;
 }
 
 .draw-msg {
-    font-size: 8vmin;
+  left: 25%;
+  font-size: 20px;
 }
 
-/* Players */
-.player-one, .player-two {
-    font-size: 1.5rem;
-}
+/* javaScript Classes */
 
-.player-one {
-    left: 5%;
-}
-.player-two {
-    right: 5%;
-}
-
-.reset-btn-2 {
-    position: relative;
-    bottom: 6.8rem;
-    left: 8rem;
-}
-
-.container {
-    height: 70vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 5rem;
-    /* border: 2px solid black; */
-}
-
-.hide {
-    display: none;
+.draw-reset-btn {
+  position: fixed;
+  top: 60%;
+  left: 40%;
 }

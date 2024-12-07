@@ -1,44 +1,27 @@
-/* Universal selector to set everything to 0 */
+/* Universal Styling */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
+body,
+html {
+  height: 100%;
+}
+
 body {
+  font-family: poppins;
+}
+
+.heading {
   text-align: center;
-  font-family: poppins, sans-serif;
+  font-size: 5rem;
 }
 
-/* Back button */
-.back {
-  padding: 1rem;
-  border-radius: 2rem;
-  border: 2px solid #98c1d9;
-  position: fixed;
-  bottom: 5rem;
-  right: 90%;
-  font-weight: 700;
-  box-shadow: 0 0 1rem rgb(0, 0, 0);
-  text-shadow: 0 0 1rem rgb(0, 0, 0);
-}
+/* Toggle Mode */
 
-.back img {
-  width: 30px;
-}
-
-.back:hover {
-  transform: scale(1.05);
-  transition: transform 0.5s ease-in-out;
-}
-
-/* Remove underline for links */
-a {
-  text-decoration: none;
-}
-
-/* Mode button */
 label {
   /* border: 2px solid black; */
   position: fixed;
@@ -153,141 +136,140 @@ label input:checked ~ .botn {
   left: 20px;
 }
 
-/* Reset Button */
-.reset-btn {
-  padding: 1.5rem;
-  font-size: 1.2rem;
-  font-weight: 700;
-  border-radius: 2rem;
-  border: 2px solid #98c1d9;
-  box-shadow: 0 0 1rem rgb(0, 0, 0);
-  position: relative;
-  bottom: 5rem;
-}
-
-.reset-btn:hover {
-  transform: scale(1.05);
-  transition: transform 0.5s ease-in-out;
-}
-
-.new-btn {
-  padding: 1.5rem;
-  font-size: 1.2rem;
-  font-weight: 700;
-  border-radius: 2rem;
-  border: 2px solid #98c1d9;
-  box-shadow: 0 0 1rem rgb(0, 0, 0);
-  position: relative;
-}
-
-.new-btn:hover {
-  transform: scale(1.05);
-  transition: transform 0.5s ease-in-out;
-}
-
-/* Heading */
-h1 {
-  font-size: 4rem;
-  margin-top: 4rem;
-  text-shadow: 0 0 1rem rgb(0, 0, 0);
-  height: 4rem;
-  line-height: 4rem;
-}
-
-/* Main game */
-.container {
-  height: 70vh;
+.main-container {
+  /* border: 2px solid black; */
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.game {
-  height: 40vmin;
-  width: 40vmin;
-  display: flex;
+  height: 75%;
   justify-content: center;
   align-items: center;
+  gap: 10rem;
+  padding: 10px;
+}
+
+.game-container {
+  /* border: 2px solid black; */
+  height: 100%;
+  width: 600px;
+  display: flex;
   flex-wrap: wrap;
-  gap: 1.5vmin;
-  position: relative;
-  bottom: 10%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .box {
-  height: 10vmin;
-  width: 10vmin;
-  border-radius: 1rem;
-  border: 2px solid #98c1d9;
-  box-shadow: 0 0 1rem rgb(0, 0, 0);
-  font-size: 5vmin;
+  /* border: 2px solid black; */
+  width: 140px;
+  height: 140px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #000, inset 0 0 10px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
 }
 
-@keyframes pop {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+.player-1,
+.player-2 {
+  font-size: 40px;
+  text-decoration: underline;
 }
 
-/* Winner message */
-.msg {
-  font-size: 10vmin;
-  text-shadow: 0 0 1rem rgb(0, 0, 0);
+.new-btn {
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #000, inset 0 0 10px #000;
+  transition: 0.5s;
+}
+
+.new-btn:active {
+  transform: scale(0.9);
+}
+
+.reset-btn {
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #000, inset 0 0 10px #000;
+  position: fixed;
+  bottom: 5%;
+  left: 10%;
+  transition: 0.5s;
+}
+
+.reset-btn:active {
+  transform: scale(0.9);
+}
+
+.back-btn {
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #000, inset 0 0 10px #000;
+  position: fixed;
+  bottom: 5%;
+  left: 5%;
+  transition: 0.5s;
+}
+
+.back-btn:active {
+  transform: scale(0.9);
+}
+
+.back-btn-link {
+  /* border: 2px solid black; */
+  display: block;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 .msg-container {
-  height: 100vmin;
+  position: fixed;
+  left: 30%;
+  top: 50%;
   display: flex;
+  flex-direction: column;
+  gap: 3rem;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 4rem;
 }
 
-/* Draw message */
-.msg-container-draw {
-  height: 80vmin;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 4rem;
+.msg {
+  font-size: 40px;
 }
 
 .draw-msg {
-  font-size: 10vmin;
-  text-shadow: 0 0 1rem rgb(0, 0, 0);
+  position: fixed;
+  top: 40%;
+  left: 30%;
+  font-size: 40px;
 }
 
-/* Players */
-.player-one,
-.player-two {
-  font-size: 2rem;
-  font-weight: 700;
-}
+/* javaScript Classes */
 
-.player-one {
-  position: relative;
-  left: 10%;
-  bottom: 10%;
-}
-.player-two {
-  position: relative;
-  right: 10%;
-  bottom: 10%;
-}
-
-.turn {
-  text-shadow: 0 0 1rem rgb(0, 0, 0);
-}
-
-/* Utility classes */
-.hide {
+.hidden {
   display: none;
+}
+
+.no-turn {
+  text-decoration: none;
+}
+
+.draw-reset-btn {
+  position: fixed;
+  top: 60%;
+  left: 45%;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #000, inset 0 0 10px #000;
+  transition: 0.5s;
+}
+
+.draw-reset-btn:active {
+  transform: scale(0.9);
 }
