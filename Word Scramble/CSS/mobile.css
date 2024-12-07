@@ -15,9 +15,11 @@ label {
 
 .main-game {
   /* border: 2px solid black; */
-  height: 60%;
+  padding: 20px;
+  height: 50%;
   width: 90%;
   left: 5%;
+  gap: 1rem;
 }
 
 .submit-btn {

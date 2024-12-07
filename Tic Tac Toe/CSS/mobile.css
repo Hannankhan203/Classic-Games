@@ -1,6 +1,6 @@
 label {
-    top: 80%;
-    right: 15%;
+    top: 90%;
+    right: 10%;
   }
 
 .main-container {
@@ -36,7 +36,7 @@ label {
 
 .reset-btn {
   font-size: 10px;
-  left: 35%;
+  left: 40%;
 }
 
 .back-btn {
@@ -56,8 +56,8 @@ label {
 }
 
 .draw-msg {
-  border: 2px solid black;
-  left: 5%;
+  /* border: 2px solid black; */
+  left: 0%;
   text-align: center;
   width: 100%;
   font-size: 20px;
@@ -66,6 +66,6 @@ label {
 /* javaScript Classes */
 
 .draw-reset-btn {
-  left: 37%;
+  left: 40%;
   font-size: 10px;
 }
