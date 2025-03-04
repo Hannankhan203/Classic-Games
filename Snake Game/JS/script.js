@@ -10,6 +10,9 @@ const upButton = document.querySelector(".up");
 const downButton = document.querySelector(".down");
 const leftButton = document.querySelector(".left");
 const rightButton = document.querySelector(".right");
+const gameOverScreen = document.querySelector(".game-over-screen");
+const restartBtn = document.querySelector(".restart-btn");
+const finalScore = document.querySelector(".final-score");
 
 // Adding Light Mode
 body.classList.add("light-mode");
@@ -18,6 +21,8 @@ botn.classList.add("light-mode");
 gameBoard.classList.add("light-mode");
 score.classList.add("light-mode");
 highestScore.classList.add("light-mode");
+gameOverScreen.classList.add("light-mode");
+restartBtn.classList.add("light-mode");
 
 // Dark Mode Toggle Function
 function toggleMode() {
@@ -27,6 +32,8 @@ function toggleMode() {
   gameBoard.classList.toggle("dark-mode");
   score.classList.toggle("dark-mode");
   highestScore.classList.toggle("dark-mode");
+  gameOverScreen.classList.toggle("dark-mode");
+  restartBtn.classList.toggle("dark-mode");
 }
 
 // Toggle Button Event
@@ -34,12 +41,12 @@ themeCheckbox.addEventListener("click", toggleMode);
 
 // Main Game
 // Declaring Variables
-let snake = [{ x: 10, y: 10 }];
-let direction = { x: 0, y: 0 };
+let snake = [{ x: 13, y: 13 }];
+let direction = { x: 0, y: -1 };
 let currentScore = 0;
 let food = randomFoodPosition();
 let highScore = localStorage.getItem("highest-score") || 0;
-highestScore.innerHTML = `Highscore ${highScore}`;
+highestScore.innerHTML = `Highscore: ${highScore}`;
 
 // Making Keyboard Buttons Functional
 window.addEventListener("keydown", function (e) {
@@ -67,8 +74,8 @@ function randomFoodPosition() {
   let newFoodPosition;
   do {
     newFoodPosition = {
-      x: Math.floor(Math.random() * 18 + 1),
-      y: Math.floor(Math.random() * 18 + 1),
+      x: Math.floor(Math.random() * 25 + 1),
+      y: Math.floor(Math.random() * 25 + 1),
     };
   } while (
     snake.some(
@@ -107,70 +114,94 @@ function moveSnake() {
   let newHead = { x: snake[0].x + direction.x, y: snake[0].y + direction.y };
   if (
     newHead.x < 1 ||
-    newHead.x > 18 ||
+    newHead.x > 25 ||
     newHead.y < 1 ||
-    newHead.y > 18 ||
+    newHead.y > 25 ||
     snake.some((segment) => segment.x === newHead.x && segment.y === newHead.y)
   ) {
-    resetGame();
+    gameOver();
     return;
   }
 
   snake.unshift(newHead);
 
-  if(newHead.x === food.x && newHead.y === food.y) {
+  if (newHead.x === food.x && newHead.y === food.y) {
     food = randomFoodPosition();
     currentScore += 10;
-    score.innerHTML = `Score ${currentScore}`;
-    if(currentScore > highScore) {
-        highScore = currentScore;
-        localStorage.setItem("highest-score", highScore);
-        highestScore.innerHTML = `highscore ${highScore}`;
+    score.innerHTML = `Score: ${currentScore}`;
+    if (currentScore > highScore) {
+      highScore = currentScore;
+      localStorage.setItem("highest-score", highScore);
+      highestScore.innerHTML = `highscore ${highScore}`;
     }
   } else {
     snake.pop();
-}
+  }
 }
 
 // Reset Game
 function resetGame() {
-    snake = [{x: 10, y: 10}];
-    direction = {x: 0, y: 0};
-    currentScore = 0;
-    score.innerHTML = `Score ${currentScore}`;
-}
-
-// Making the Game Loop
-setInterval(function() {
+  snake = [{ x: 13, y: 13 }];
+  direction = { x: 0, y: -1 };
+  currentScore = 0;
+  score.innerHTML = `Score: ${currentScore}`;
+  // gameOverScreen.classList.add("hidden");
+  gameOverScreen.style.display = "none";
+  // finalScore.innerHTML = "";
+  food = randomFoodPosition();
+  clearInterval(gameInterval);
+  gameInterval = setInterval(function () {
     drawGame();
     moveSnake();
-}, 300);
+  }, 300);
+  
+}
+
+restartBtn.addEventListener("click", resetGame);
+
+// Making the Game Loop
+let gameInterval;
+function startGame() {
+  gameInterval = setInterval(function () {
+    drawGame();
+    moveSnake();
+  }, 300);
+}
+
+startGame();
+
+// Game Over Function
+function gameOver() {
+  gameOverScreen.style.display = "flex";
+  clearInterval(gameInterval);
+  finalScore.innerHTML = currentScore;
+}
 
 // Controls for touch screen devices
 upButton.addEventListener("click", () => {
-  const newDirection = {x: 0, y: -1};
-  if(newDirection.x !== -direction.x || newDirection.y !== -direction.y) {
+  const newDirection = { x: 0, y: -1 };
+  if (newDirection.x !== -direction.x || newDirection.y !== -direction.y) {
     direction = newDirection;
   }
 });
 
 downButton.addEventListener("click", () => {
-  const newDirection = {x: 0, y: 1};
-  if(newDirection.x !== -direction.x || newDirection.y !== -direction.y) {
+  const newDirection = { x: 0, y: 1 };
+  if (newDirection.x !== -direction.x || newDirection.y !== -direction.y) {
     direction = newDirection;
   }
 });
 
 leftButton.addEventListener("click", () => {
-  const newDirection = {x: -1, y: 0};
-  if(newDirection.x !== -direction.x || newDirection.y !== -direction.y) {
+  const newDirection = { x: -1, y: 0 };
+  if (newDirection.x !== -direction.x || newDirection.y !== -direction.y) {
     direction = newDirection;
   }
 });
 
 rightButton.addEventListener("click", () => {
-  const newDirection = {x: 1, y: 0};
-  if(newDirection.x !== -direction.x || newDirection.y !== -direction.y) {
+  const newDirection = { x: 1, y: 0 };
+  if (newDirection.x !== -direction.x || newDirection.y !== -direction.y) {
     direction = newDirection;
   }
 });

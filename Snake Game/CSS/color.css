@@ -87,3 +87,26 @@ label .botn.dark-mode::after {
   background-color: white;
   color: #333;
 }
+
+.game-over-screen.light-mode {
+  background-color: darkblue;
+  transition: 0.5s;
+  color: white;
+}
+
+.game-over-screen.dark-mode {
+  background-color: black;
+  transition: 0.5s;
+}
+
+.restart-btn.light-mode {
+  background-color: #000;
+  color: white;
+  transition: 0.5s;
+}
+
+.restart-btn.dark-mode {
+  background-color: white;
+  transition: 0.5s;
+  color: black;
+}

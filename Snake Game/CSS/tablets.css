@@ -30,13 +30,13 @@ label input:checked ~ .botn {
 .container {
   height: min-content;
   justify-content: start;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .game-board {
   border: 8px solid grey;
-  width: 80vw;
-  height: 40vh;
+  width: 60vw;
+  height: 50vh;
 }
 
 .highest-score,
@@ -66,47 +66,51 @@ label input:checked ~ .botn {
 }
 
 .touch-screen-btns {
-    /* border: 2px solid black; */
-    padding: 5px;
+  /* border: 2px solid black; */
+  padding: 5px;
   display: grid;
-  grid-template-areas: 
-  ". up ." 
-  "left . right" 
-  ". down .";
+  grid-template-areas:
+    ". up ."
+    "left . right"
+    ". down .";
   gap: 10px;
   position: absolute;
-  top: 65%;
+  top: 68%;
 }
 
 .touch-screen-btn {
-    width: 60px;
-    height: 60px;
-    font-size: 24px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
 }
 
 .touch-screen-btn:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .up {
-    grid-area: up;
+  grid-area: up;
 }
 
 .down {
-    grid-area: down;
+  grid-area: down;
 }
 
 .left {
-    grid-area: left;
+  grid-area: left;
 }
 
 .right {
-    grid-area: right;
+  grid-area: right;
+}
+
+.game-over-screen {
+  top: 40%;
 }
