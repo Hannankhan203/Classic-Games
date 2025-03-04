@@ -269,3 +269,25 @@ label input:checked ~ .botn {
 .hidden {
   display: none;
 }
+
+.back-btn {
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #000, inset 0 0 10px #000;
+  position: fixed;
+  bottom: 5%;
+  left: 5%;
+  transition: 0.5s;
+}
+
+.back-btn:active {
+  transform: scale(0.9);
+}
+
+.back-btn-link {
+  /* border: 2px solid black; */
+  display: block;
+  padding: 10px;
+  border-radius: 20px;
+}

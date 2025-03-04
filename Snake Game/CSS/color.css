@@ -133,3 +133,23 @@ label .botn.dark-mode::after {
   transition: 0.5s;
   color: black;
 }
+
+.back-btn.light-mode {
+  background-color: darkblue;
+  transition: 0.5s;
+}
+
+.back-btn.dark-mode {
+  background-color: black;
+  transition: 0.5s;
+}
+
+.back-btn-link.light-mode {
+  color: white;
+  transition: 0.5s;
+}
+
+.back-btn-link.dark-mode {
+  color: white;
+  transition: 0.5s;
+}

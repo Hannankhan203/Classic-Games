@@ -15,6 +15,8 @@ const restartBtn = document.querySelector(".restart-btn");
 const finalScore = document.querySelector(".final-score");
 const gameStartScreen = document.querySelector(".game-start-screen");
 const startBtn = document.querySelector(".start-btn");
+const backBtn = document.querySelector(".back-btn");
+const backBtnLink = document.querySelector(".back-btn-link");
 
 // Adding Light Mode
 body.classList.add("light-mode");
@@ -27,6 +29,8 @@ gameOverScreen.classList.add("light-mode");
 restartBtn.classList.add("light-mode");
 gameStartScreen.classList.add("light-mode");
 startBtn.classList.add("light-mode");
+backBtn.classList.add("light-mode");
+backBtnLink.classList.add("light-mode");
 
 // Dark Mode Toggle Function
 function toggleMode() {
@@ -40,6 +44,8 @@ function toggleMode() {
   restartBtn.classList.toggle("dark-mode");
   gameStartScreen.classList.toggle("dark-mode");
   startBtn.classList.toggle("dark-mode");
+  backBtn.classList.toggle("dark-mode");
+  backBtnLink.classList.toggle("dark-mode");
 }
 
 // Toggle Button Event
