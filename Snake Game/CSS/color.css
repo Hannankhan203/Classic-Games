@@ -110,3 +110,26 @@ label .botn.dark-mode::after {
   transition: 0.5s;
   color: black;
 }
+
+.game-start-screen.light-mode {
+  background-color: darkblue;
+  transition: 0.5s;
+  color: white;
+}
+
+.game-start-screen.dark-mode {
+  background-color: black;
+  transition: 0.5s;
+}
+
+.start-btn.light-mode {
+  background-color: #000;
+  color: white;
+  transition: 0.5s;
+}
+
+.start-btn.dark-mode {
+  background-color: white;
+  transition: 0.5s;
+  color: black;
+}

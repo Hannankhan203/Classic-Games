@@ -114,3 +114,7 @@ label input:checked ~ .botn {
 .game-over-screen {
   top: 40%;
 }
+
+.game-start-screen {
+  top: 40%;
+}

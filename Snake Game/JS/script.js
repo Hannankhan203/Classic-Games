@@ -13,6 +13,8 @@ const rightButton = document.querySelector(".right");
 const gameOverScreen = document.querySelector(".game-over-screen");
 const restartBtn = document.querySelector(".restart-btn");
 const finalScore = document.querySelector(".final-score");
+const gameStartScreen = document.querySelector(".game-start-screen");
+const startBtn = document.querySelector(".start-btn");
 
 // Adding Light Mode
 body.classList.add("light-mode");
@@ -23,6 +25,8 @@ score.classList.add("light-mode");
 highestScore.classList.add("light-mode");
 gameOverScreen.classList.add("light-mode");
 restartBtn.classList.add("light-mode");
+gameStartScreen.classList.add("light-mode");
+startBtn.classList.add("light-mode");
 
 // Dark Mode Toggle Function
 function toggleMode() {
@@ -34,6 +38,8 @@ function toggleMode() {
   highestScore.classList.toggle("dark-mode");
   gameOverScreen.classList.toggle("dark-mode");
   restartBtn.classList.toggle("dark-mode");
+  gameStartScreen.classList.toggle("dark-mode");
+  startBtn.classList.toggle("dark-mode");
 }
 
 // Toggle Button Event
@@ -111,6 +117,7 @@ function drawGame() {
 
 // Moving the Snake
 function moveSnake() {
+  gameStartScreen.style.display = "none";
   let newHead = { x: snake[0].x + direction.x, y: snake[0].y + direction.y };
   if (
     newHead.x < 1 ||
@@ -168,7 +175,7 @@ function startGame() {
   }, 300);
 }
 
-startGame();
+startBtn.addEventListener("click", startGame);
 
 // Game Over Function
 function gameOver() {

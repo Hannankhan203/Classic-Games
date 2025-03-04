@@ -236,6 +236,36 @@ label input:checked ~ .botn {
   transform: scale(0.95);
 }
 
+.game-start-screen {
+  /* border: 2px solid black; */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000, inset 0 0 10px #000;
+}
+
+.start-btn {
+  padding: 5px 10px;
+  border: none;
+  transition: 0.3s;
+  border-radius: 10px;
+  font-size: 20px
+}
+
+.start-btn:active {
+  transform: scale(0.95);
+}
+
+
 .hidden {
   display: none;
 }
