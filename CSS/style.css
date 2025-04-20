@@ -139,8 +139,11 @@ label input:checked ~ .botn {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 30%;
-  gap: 3rem;
+  top: 10%;
+  left: 20%;
+  gap: 2rem;
+  width: 60%;
+  flex-wrap: wrap;
 }
 
 .options {
